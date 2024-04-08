@@ -11,7 +11,7 @@ const Properties = ({ data }) => {
                 <h1 className="text-center text-3xl font-bold">Latest Properties</h1>
                 <p className="text-center w-1/2">Discover your dream home with the latest listings showcasing a variety of styles, locations, and price ranges, tailored to fit your unique preferences and needs.</p>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-10 ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10 ">
                 {
                     data.map(item => <HouseCard key={item.id} houseInfo={item}></HouseCard>)
                 }
