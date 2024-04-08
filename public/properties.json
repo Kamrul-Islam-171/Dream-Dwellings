@@ -1,0 +1,110 @@
+[
+    {
+        "image": "https://i.ibb.co/41N0nST/95cb36ca-a78f-4bcb-a89a-d386473ab2bb.jpg",
+        "estate_title": "Spacious Single-Family Home with Garden",
+        "id": 1,
+        "segment_name": "Residential",
+        "description": "Beautiful single-family home with a large garden and modern amenities.",
+        "price": "$600,000",
+        "status": "sale",
+        "area": "3000 sq ft",
+        "location": "123 Main St, Suburban Neighborhood, City X",
+        "facilities": [
+            "living room",
+            "garden",
+            "garage",
+            "3 bedrooms"
+        ],
+        "View Property": "view_property_url"
+    },
+    {
+        "image": "https://i.ibb.co/kMyyFqn/20180817-Crumley-Night-5-of-15-jxd3vl-0.jpg",
+        "estate_title": "Modern Townhouse in Downtown",
+        "id": 2,
+        "segment_name": "Residential",
+        "description": "Stylish townhouse located in the heart of downtown with rooftop terrace.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2000 sq ft",
+        "location": "456 Elm St, Downtown, City X",
+        "facilities": [
+            "living room",
+            "rooftop terrace",
+            "garage",
+            "2 bedrooms"
+        ],
+        "View Property": "view_property_url"
+    },
+    {
+        "image": "https://i.ibb.co/GMN9YsQ/Marina-Del-Rey-Luxury-High-Rise-Living.jpg",
+        "estate_title": "Luxury Apartment in High-Rise Building",
+        "id": 3,
+        "segment_name": "Residential",
+        "description": "Elegant apartment with panoramic city views and top-notch facilities.",
+        "price": "$800,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "789 Oak St, City Center, City X",
+        "facilities": [
+            "living room",
+            "balcony",
+            "gym",
+            "swimming pool"
+        ],
+        "View Property": "view_property_url"
+    },
+    {
+        "image": "https://i.ibb.co/yQxfbR2/Wolf-Runhigh-1-t670.jpg",
+        "estate_title": "Modern Student Housing Complex",
+        "id": 4,
+        "segment_name": "Residential",
+        "description": "Contemporary student housing with study lounges and fitness center.",
+        "price": "$1,200/month",
+        "status": "rent",
+        "area": "500 sq ft",
+        "location": "101 College Ave, Near University Campus, City X",
+        "facilities": [
+            "studio apartment",
+            "study lounge",
+            "fitness center",
+            "laundry room"
+        ],
+        "View Property": "view_property_url"
+    },
+    {
+        "image": "https://i.ibb.co/tsgz1KN/245200-standard.jpg",
+        "estate_title": "Senior Living Community with Resort Amenities",
+        "id": 5,
+        "segment_name": "Residential",
+        "description": "Retirement community offering resort-style living for seniors.",
+        "price": "$3,000/month",
+        "status": "rent",
+        "area": "1200 sq ft",
+        "location": "789 Elderly Dr, Senior Living District, City X",
+        "facilities": [
+            "1-bedroom apartment",
+            "swimming pool",
+            "restaurant",
+            "library"
+        ],
+        "View Property": "view_property_url"
+    },
+    {
+        "image": "https://i.ibb.co/FWyZYSp/image.png",
+        "estate_title": "Seaside Vacation Rental Villa",
+        "id": 6,
+        "segment_name": "Residential",
+        "description": "Charming villa by the sea offering a perfect retreat for vacationers.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "2000 sq ft",
+        "location": "123 Beachfront Ave, Seaside Resort, City X",
+        "facilities": [
+            "3 bedrooms",
+            "ocean view terrace",
+            "private beach access",
+            "fully furnished"
+        ],
+        "View Property": "view_property_url"
+    }
+]
