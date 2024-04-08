@@ -4,16 +4,16 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
     const navlinks = <>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-[#e9a081] rounded-lg text-[#e9a081] p-2" : "text-lg font-medium hover:bg-[#e9a08166] p-2 rounded-lg hover:text-white"
+            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/'>Home</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-[#e9a081] rounded-lg text-[#e9a081] p-2" : "text-lg font-medium hover:bg-[#e9a08166] p-2 rounded-lg hover:text-white"
+            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/userProfile'>User Profile</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-[#e9a081] rounded-lg text-[#e9a081] p-2" : "text-lg font-medium hover:bg-[#e9a08166] p-2 rounded-lg hover:text-white"
+            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/updateProfile'>Update Profile</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-[#e9a081] rounded-lg text-[#e9a081] p-2" : "text-lg font-medium hover:bg-[#e9a08166] p-2 rounded-lg hover:text-white"
+            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/about'>About Us</NavLink>
     </>
     return (
@@ -28,7 +28,7 @@ const NavBar = () => {
                             {navlinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost font-bold text-lg md:text-xl lg:text-2xl ">Dream <span className="text-[#e9a081]">Dwellings</span></a>
+                    <a className="btn btn-ghost font-bold text-lg md:text-xl lg:text-2xl ">Dream <span className="text-primary-color">Dwellings</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex gap-5">
@@ -54,8 +54,8 @@ const NavBar = () => {
                         </ul>
                     </div>
 
-                    <div className='border  rounded-lg hover:border-[#e9a081]'>
-                        <Link to='/login' className="btn hover:text-[#e9a081] hover:bg-white hover:border-[#e9a081] bg-[#e9a081] text-white font-bold text-lg border-none px-5">LogIn</Link>
+                    <div className='border  rounded-lg hover:border-primary-color'>
+                        <Link to='/login' className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogIn</Link>
                     </div>
                 </div>
             </div>

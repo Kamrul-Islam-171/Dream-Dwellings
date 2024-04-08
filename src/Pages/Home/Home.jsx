@@ -14,6 +14,8 @@ const Home = () => {
             <div className="mt-[70px]">
                 <Bannar></Bannar>
             </div>
+
+            <h1 className="">Hello</h1>
         </>
     );
 };
