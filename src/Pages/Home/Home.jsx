@@ -3,6 +3,7 @@ import Bannar from "../../Layouts/Bannar/Bannar";
 import Properties from "../../Layouts/Properties/Properties";
 import { useLoaderData } from "react-router-dom";
 import ChoosingUs from "../../Layouts/ChoosingUs/ChoosingUs";
+import Services from "../../Layouts/Services/Services";
 
 
 
@@ -20,8 +21,15 @@ const Home = () => {
                 <Bannar></Bannar>
             </div>
 
+
+
+
             <div className="bg-base-200">
                 <div className="container mx-auto pt-24 pb-24">
+                    <div className=" mb-24 mt-10" >
+
+                        <Services></Services>
+                    </div>
                     <Properties data={data}></Properties>
                 </div>
             </div>
