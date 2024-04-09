@@ -7,7 +7,7 @@ const HouseCard = ({ houseInfo }) => {
         <div>
             <div className="card  bg-base-100 shadow-xl relative">
                 <figure className="p-2"><img className="rounded-lg h-[300px]" src={image} alt="Shoes" /></figure>
-                <div className="card-body h-[300px] flex flex-col ">
+                <div className="card-body h-[275px] flex flex-col ">
                     <h2 className="card-title text-primary-color">{estate_title}</h2>
                     <div className="flex gap-2">
                         <span className="text-primary-color mt-[5px]"><FaLocationDot /></span>
@@ -15,10 +15,10 @@ const HouseCard = ({ houseInfo }) => {
                     </div>
                     <div className="flex text-lg font-medium">
                         <p className="">{price}</p>
-                        <p className="text-end ">{area}</p>
+                        <p className="">{area}</p>
                     </div>
                     <div className="flex-grow">
-                        <div className="flex justify-around ">
+                        <div className="flex gap-1">
                             {
                                 facilities.map((item, idx) => <p className="" key={idx}>{item}</p>)
                             }

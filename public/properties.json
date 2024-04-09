@@ -10,9 +10,9 @@
         "area": "3000 sq ft",
         "location": "123 Main St, Suburban Neighborhood",
         "facilities": [
-            "living room",
-            "garden",
-            "3 rooms"
+            "Living Room",
+            "Garden",
+            "3 Rooms"
         ]
     },
     {
@@ -26,9 +26,9 @@
         "area": "2000 sq ft",
         "location": "456 Elm St, Downtown",
         "facilities": [
-            "living room",
-            "garage",
-            "2 rooms"
+            "Living Room",
+            "Garage",
+            "2 Rooms"
         ]
     },
     {
@@ -42,9 +42,9 @@
         "area": "1800 sq ft",
         "location": "789 Oak St, City Center",
         "facilities": [
-            "living room",
-            "gym",
-            "swimming pool"
+            "Living Room",
+            "Gym",
+            "Swimming Pool"
         ]
     },
     {
@@ -58,9 +58,9 @@
         "area": "500 sq ft",
         "location": "101 College Ave, Near University Campus",
         "facilities": [
-            "studio ",
-            "study lounge",
-            "fitness center"
+            "Studio",
+            "Study Lounge",
+            "Fitness Center"
         ]
     },
     {
@@ -74,9 +74,9 @@
         "area": "1200 sq ft",
         "location": "789 Elderly Dr, Senior Living District",
         "facilities": [
-            "1 room ",
-            "swimming pool",
-            "restaurant"
+            "1 Room ",
+            "Swimming Pool",
+            "Restaurant"
         ]
     },
     {
@@ -90,9 +90,9 @@
         "area": "2000 sq ft",
         "location": "123 Beachfront Ave, Seaside Resort",
         "facilities": [
-            "3 rooms",
-            "ocean view ",
-            "beach "
+            "3 Rooms",
+            "Ocean view ",
+            "Beach"
         ]
     }
 ]
