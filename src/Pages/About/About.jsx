@@ -9,9 +9,9 @@ const About = () => {
                 <title>About Us</title>
             </Helmet>
 
-            <div className="mt-[70px]">
+            <div className="">
 
-                <h1>Wants to know about us!!</h1>
+                <h1 className="text-3xl">Wants to know about us!!</h1>
             </div>
 
         </>

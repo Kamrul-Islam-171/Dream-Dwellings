@@ -4,6 +4,8 @@ import Home from "../../Pages/Home/Home";
 import About from "../../Pages/About/About";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Login from "../../Pages/LogIn/Login";
+import PropertyDetails from "../../Pages/PropertyDetails/PropertyDetails";
+import UserProfile from "../../Pages/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +25,15 @@ const router = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login></Login>
+            },
+            {
+                path:'/propertyDetails/:id',
+                element : <PropertyDetails></PropertyDetails>,
+                loader:() => fetch('/properties.json')
+            },
+            {
+                path:'/userProfile',
+                element:<UserProfile></UserProfile>
             }
         ]
     },

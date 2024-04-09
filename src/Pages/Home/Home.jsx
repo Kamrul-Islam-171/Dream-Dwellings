@@ -16,7 +16,7 @@ const Home = () => {
                 <title>Home</title>
             </Helmet>
 
-            <div className="mt-[70px]">
+            <div className="">
                 <Bannar></Bannar>
             </div>
 

@@ -1,8 +1,9 @@
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const HouseCard = ({ houseInfo }) => {
-    const { image, estate_title, description, segment_name, price, status, area, location, facilities } = houseInfo;
-    console.log(houseInfo)
+    const { image, estate_title, description, segment_name, price, status, area, location, facilities , id} = houseInfo;
+    // console.log(houseInfo)
     return (
         <div>
             <div className="card  bg-base-100 shadow-xl relative">
@@ -25,10 +26,10 @@ const HouseCard = ({ houseInfo }) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-primary-color text-white text-lg">View Property</button>
+                        <Link to={`/propertyDetails/${id}`}><button className="btn bg-primary-color text-white ">View Property</button></Link>
                     </div>
                 </div>
-                <div className="bg-primary-color w-[100px] px-2 py-1 text-center rounded-lg text-white absolute top-6 right-6">
+                <div className="bg-primary-color text-sm w-[80px] py-1  text-center rounded-lg text-white absolute top-6 right-6">
                     <p>For {status}</p>
                 </div>
             </div>
