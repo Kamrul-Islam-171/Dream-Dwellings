@@ -53,7 +53,7 @@ const Register = () => {
                             {errors?.password && <p className="text-red-500">{  errors.password.message}</p>}
                             
                         </div>
-                        <button className="block w-full p-3 text-center rounded-sm  bg-primary-color text-gray-100">Register</button>
+                        <button className="block w-full p-3 text-center rounded-sm  bg-primary-color text-gray-100 hover:bg-secondary-color">Register</button>
                     </form>
                     
                   
