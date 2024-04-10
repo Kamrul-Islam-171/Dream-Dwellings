@@ -53,9 +53,9 @@ const PropertyDetails = () => {
                         }
                     </div>
                     <p>For : <span className='bg-primary-color text-white px-3 rounded-sm'>{property[0]?.status}</span></p>
-                    <p>{property[0]?.location}</p>
-                    <p>{property[0]?.area}</p>
-                    <p className='font-bold text-xl'>{property[0]?.price}</p>
+                    <p><span className='font-semibold'>Location : </span>{property[0]?.location}</p>
+                    <p><span className='font-semibold'>Area : </span>{property[0]?.area}</p>
+                    <p className='font-bold text-xl'><span>Price : </span>{property[0]?.price}</p>
 
 
                 </div>

@@ -1,17 +1,28 @@
 
-import { useState } from "react";
+
 import { Helmet } from "react-helmet-async";
-import './Login.css'
+
+import { Link } from "react-router-dom";
+import { useForm, } from "react-hook-form"
+
 
 
 const Login = () => {
-    
-    const handleLogin = (e) => {
-        e.preventDefault();
-        // Here you can implement your login logic
-        console.log(e.target.email.value);
-       
-    };
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm({
+        criteriaMode: "all",
+        mode: "onChange"
+    })
+
+    const onSubmit = (data) => {
+        console.log(data)
+    }
+    // console.log(watch("example")) // watch input value by passing the name of it
+
 
 
     return (
@@ -20,77 +31,22 @@ const Login = () => {
                 <title>User LogIn</title>
             </Helmet>
 
-            {/* <div className="login-container">
-                <div className="login-card">
-                    <h2 className="login-header">Welcome Back!</h2>
-                    <form onSubmit={handleLogin} className="login-form">
-                        <div className="form-control">
-                            <label htmlFor="username">Username</label>
-                            <input
-                                id="username"
-                                type="text"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
-                                placeholder="Enter your username"
-                            />
-                        </div>
-                        <div className="form-control">
-                            <label htmlFor="password">Password</label>
-                            <input
-                                id="password"
-                                type="password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                placeholder="Enter your password"
-                            />
-                        </div>
-                        <button type="submit" className="login-btn">Login</button>
-                    </form>
-                </div>
-            </div> */}
-
-            {/* <div className="flex justify-center items-center h-screen bg-gray-100">
-                <div className="bg-white p-8 rounded-lg shadow-md w-96">
-                    <h2 className="text-2xl font-semibold mb-4">Welcome Back!</h2>
-                    <form onSubmit={handleLogin}>
-                        <div className="mb-4">
-                            <label htmlFor="username" className="block text-gray-700">Username</label>
-                            <input
-                                id="username"
-                                type="text"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
-                                className="w-full px-4 py-2 mt-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
-                                placeholder="Enter your username"
-                            />
-                        </div>
-                        <div className="mb-4">
-                            <label htmlFor="password" className="block text-gray-700">Password</label>
-                            <input
-                                id="password"
-                                type="password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                className="w-full px-4 py-2 mt-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
-                                placeholder="Enter your password"
-                            />
-                        </div>
-                        <button type="submit" className="w-full py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300">Login</button>
-                    </form>
-                </div>
-            </div> */}
 
             <div className="flex justify-center items-center mt-32 mb-24">
-                <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-orange-100 text-gray-700">
-                    <h1 className="text-2xl font-bold text-center">Login</h1>
-                    <form noValidate=""  className="space-y-6" onSubmit={handleLogin}>
+                <div className="w-full max-w-md p-8 space-y-3 rounded-xl border-primary-color border text-gray-700">
+                    <h1 className="text-2xl font-bold text-center text-primary-color">Login</h1>
+                    <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
                         <div className="space-y-1 text-sm">
-                            <label htmlFor="username" className="block text-gray-700">Your Email</label>
-                            <input type="email" name="email"  placeholder="Email" className=" w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
+                            <label htmlFor="email" className="block text-gray-700">Your Email</label>
+                            <input type="email" name="email" placeholder="Email" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
                         </div>
                         <div className="space-y-1 text-sm">
                             <label htmlFor="password" className="block text-gray-700">Password</label>
-                            <input type="password" name="password"  placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
+                            <input type="password"  {...register("password", { required: true, minLength: 6})} placeholder="Password" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
+                            {errors?.password?.types?.required && <p className="text-red-500">password required</p>}
+                            {errors?.password?.types?.minLength && <p className="text-red-500">password minLength 6</p>}
+                            {/* {errors?.password?.types?.pattern && <p>password number only</p>} */}
+
                             <div className="flex justify-end text-xs text-gray-700">
                                 <a rel="noopener noreferrer" href="#">Forgot Password?</a>
                             </div>
@@ -120,7 +76,7 @@ const Login = () => {
                         </button>
                     </div>
                     <p className="text-xs text-center sm:px-6 text-black">Don't have an account?
-                        <a rel="noopener noreferrer" href="#" className="underline text-sm"> Register Now</a>
+                        <Link to={'/register'} className="underline text-sm text-primary-color"> Register Now</Link>
                     </p>
                 </div>
             </div>
