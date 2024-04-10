@@ -8,6 +8,9 @@ import { useForm, } from "react-hook-form"
 
 
 const Login = () => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
     const {
         register,
         handleSubmit,
@@ -75,7 +78,7 @@ const Login = () => {
                             </svg>
                         </button>
                     </div>
-                    <p className="text-xs text-center sm:px-6 text-black">Don't have an account?
+                    <p onClick={scrollToTop} className="text-xs text-center sm:px-6 text-black">Don't have an account?
                         <Link to={'/register'} className="underline text-sm text-primary-color"> Register Now</Link>
                     </p>
                 </div>

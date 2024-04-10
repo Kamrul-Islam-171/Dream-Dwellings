@@ -21,6 +21,9 @@
     {
         "image": "https://i.ibb.co/kMyyFqn/20180817-Crumley-Night-5-of-15-jxd3vl-0.jpg",
         "estate_title": "Modern Townhouse in Downtown",
+        "insideImage1":"https://i.ibb.co/WWp2mQW/Minimalist-modern-home-interior-design-with-a-patio.jpg",
+        "insideImage2":"https://i.ibb.co/km1wDPB/Southridge-10-Dining-Living.jpg",
+        "insideImage3":"https://i.ibb.co/2yxfHBC/a5a802e318692d1c4f98565ae22aeaf6.jpg",
         "id": 2,
         "segment_name": "Townhouse",
         "description": "Stylish townhouse located in the heart of downtown with rooftop terrace.",
@@ -37,6 +40,9 @@
     {
         "image": "https://i.ibb.co/GMN9YsQ/Marina-Del-Rey-Luxury-High-Rise-Living.jpg",
         "estate_title": "Apartment in High-Rise Building",
+        "insideImage1":"https://i.ibb.co/5BMFFkJ/e9a4ec0636afec39573618737b973e5d.jpg",
+        "insideImage2":"https://i.ibb.co/Byc2KTQ/filip-radojkovic-render1.jpg",
+        "insideImage3":"https://i.ibb.co/zr7sQcq/24e8f08ba83e34213572acbdb1061bf0.jpg",
         "id": 3,
         "segment_name": "Apartments",
         "description": "Elegant apartment with panoramic city views and top-notch facilities.",
@@ -53,6 +59,9 @@
     {
         "image": "https://i.ibb.co/yQxfbR2/Wolf-Runhigh-1-t670.jpg",
         "estate_title": "Modern Student Housing Complex",
+        "insideImage1":"https://i.ibb.co/yQ3wRfG/new-standards-in-student-housing-interior-design-2.jpg",
+        "insideImage2":"https://i.ibb.co/3RVmvPT/a67c8308.jpg",
+        "insideImage3":"https://i.ibb.co/bJtLds2/Student-Housing-Renovation-Clark-Nexsen-1200.jpg",
         "id": 4,
         "segment_name": "Student Housing",
         "description": "Contemporary student housing with study lounges and fitness center.",
@@ -69,6 +78,9 @@
     {
         "image": "https://i.ibb.co/tsgz1KN/245200-standard.jpg",
         "estate_title": "Senior Living Community with Resort Amenities",
+        "insideImage1":"https://i.ibb.co/M6YJ2Np/9-luxury-senior-living-amenities-youll-fall-in-love-with.jpg",
+        "insideImage2":"https://i.ibb.co/JKmn9t1/veranda-club-special-features-sensations-dining-room.jpg",
+        "insideImage3":"https://i.ibb.co/qn55YHb/hoseniorcare210723-photos.jpg",
         "id": 5,
         "segment_name": "Senior Living Community",
         "description": "Retirement community offering resort-style living for seniors.",
@@ -85,6 +97,9 @@
     {
         "image": "https://i.ibb.co/FWyZYSp/image.png",
         "estate_title": "Seaside Vacation Rental Villa",
+        "insideImage1":"https://i.ibb.co/bgKV0Zj/dune-allen-beach-home-6245420496-3ea3afed-full.jpg",
+        "insideImage2":"https://i.ibb.co/j4dF1d0/vb-5-090221.jpg",
+        "insideImage3":"https://i.ibb.co/TmNBsML/49-29-1674661360.jpg",
         "id": 6,
         "segment_name": "Seaside Rental Villa",
         "description": "Charming villa by the sea offering a perfect retreat for vacationers.",

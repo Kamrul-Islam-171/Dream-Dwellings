@@ -2,6 +2,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const HouseCard = ({ houseInfo }) => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
     const { image, estate_title, description, segment_name, price, status, area, location, facilities, id } = houseInfo;
     // console.log(houseInfo)
     return (
@@ -27,7 +30,7 @@ const HouseCard = ({ houseInfo }) => {
                         </div>
                         <hr className="border-secondary-color mt-2" />
                     </div>
-                    <div className="card-actions">
+                    <div onClick={scrollToTop} className="card-actions">
                         <Link to={`/propertyDetails/${id}`}><button className="btn border border-primary-color text-primary-color bg-white hover:bg-primary-color hover:text-white">View Property</button></Link>
                     </div>
                 </div>

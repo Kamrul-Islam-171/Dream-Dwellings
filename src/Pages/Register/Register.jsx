@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 
 const Register = () => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
     const {
         register,
         handleSubmit,
@@ -57,7 +60,7 @@ const Register = () => {
                     </form>
                     
                   
-                    <p className="text-xs text-center sm:px-6 text-black">Already have an account?
+                    <p onClick={scrollToTop} className="text-xs text-center sm:px-6 text-black">Already have an account?
                         <Link to={'/login'} className="underline text-sm text-primary-color"> Login Now</Link>
                     </p>
                 </div>

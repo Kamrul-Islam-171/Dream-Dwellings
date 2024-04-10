@@ -7,6 +7,8 @@ import Login from "../../Pages/LogIn/Login";
 import PropertyDetails from "../../Pages/PropertyDetails/PropertyDetails";
 import UserProfile from "../../Pages/UserProfile/UserProfile";
 import Register from "../../Pages/Register/Register";
+import FeedBack from "../../Pages/FeedBack/FeedBack";
+import UpdateProfile from "../../Pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
             {
                 path:'/userProfile',
                 element:<UserProfile></UserProfile>
+            },
+            {
+                path:'/feedbacks',
+                element:<FeedBack></FeedBack>
+            },
+            {
+                path:'/updateProfile',
+                element:<UpdateProfile></UpdateProfile>
             }
         ]
     },
