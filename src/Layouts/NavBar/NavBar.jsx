@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 
@@ -6,20 +6,26 @@ import { AuthContext } from "../../Context/AuthProvider";
 const NavBar = () => {
 
     const { user, userLogOut } = useContext(AuthContext);
-    console.log(user)
+    const [photo, setPhoto] = useState(null); 
+    // console.log(user);
+
+    // useEffect(() => {
+    //     setPhoto(user?.photoUrl);
+    // }, [user])
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
+    console.log(photo)
 
     const handleLogout = () => {
         console.log('please logout');
         userLogOut()
-        .then(() => {
-            console.log('sign out successfully');
-        })
-        .catch(error => {
-            console.log(error)
-        })
+            .then(() => {
+                console.log('sign out successfully');
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
     const navlinks = <>
         <NavLink className={({ isActive }) =>
@@ -72,17 +78,17 @@ const NavBar = () => {
                                 <div className="dropdown dropdown-end">
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                         <div className="w-12 rounded-full">
-                                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                            <img alt="Not found" src={user.photoURL} />
                                         </div>
                                     </div>
                                     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
                                         <li>
-                                            <Link className="justify-between">
+                                            <Link to='/userProfile' className="justify-between">
                                                 Profile
                                                 <span className="badge">New</span>
                                             </Link>
                                         </li>
-                                        <li><Link>Settings</Link></li>
+                                        <li><Link>{user?.displayName}</Link></li>
                                         <li><Link>Logout</Link></li>
                                     </ul>
                                 </div>
@@ -120,7 +126,23 @@ const NavBar = () => {
                         <Link to='/login' className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogIn</Link>
                     </div> */}
                 </div>
+
+
             </div>
+
+            {/* {
+
+                user ?
+                    <>
+                        <div>
+                            <img src={user.photoUrl} alt="" />
+                        </div>
+                    </>
+                    :
+                    <>
+                        <h1>photo nai</h1>
+                    </>
+            } */}
 
 
 

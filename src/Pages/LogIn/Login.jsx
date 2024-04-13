@@ -4,10 +4,15 @@ import { Helmet } from "react-helmet-async";
 
 import { Link } from "react-router-dom";
 import { useForm, } from "react-hook-form"
+import { useContext } from "react";
+import { AuthContext } from "../../Context/AuthProvider";
 
 
 
 const Login = () => {
+
+    const {SignInUser, user} = useContext(AuthContext);
+    console.log(user); 
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -22,7 +27,18 @@ const Login = () => {
     })
 
     const onSubmit = (data) => {
-        console.log(data)
+        // console.log(data)
+        const email = data.email;
+        const password = data.password;
+
+        SignInUser(email, password)
+        .then(result => {
+            console.log('signed in', result.user)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
     }
     // console.log(watch("example")) // watch input value by passing the name of it
 
@@ -41,7 +57,7 @@ const Login = () => {
                     <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
                         <div className="space-y-1 text-sm">
                             <label htmlFor="email" className="block text-gray-700">Your Email</label>
-                            <input type="email" name="email" placeholder="Email" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
+                            <input type="email" {...register("email")} placeholder="Email" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
                         </div>
                         <div className="space-y-1 text-sm">
                             <label htmlFor="password" className="block text-gray-700">Password</label>

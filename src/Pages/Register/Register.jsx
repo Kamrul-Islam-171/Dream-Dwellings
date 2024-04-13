@@ -7,8 +7,12 @@ import { AuthContext } from "../../Context/AuthProvider";
 
 const Register = () => {
 
-    const {CreateUser} = useContext(AuthContext);
+    const {CreateUser, udpateUserProfile, userLogOut} = useContext(AuthContext);
     // console.log(CreateUser)
+
+
+    // src = https://i.ibb.co/n0w6p8r/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg
+
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -29,9 +33,24 @@ const Register = () => {
         const password = data.password;
         // console.log(name, email, photoUrl, password)
 
+        //new registration
         CreateUser(email, password)
         .then(result => {
             console.log(result.user);
+            udpateUserProfile(name, photoUrl)
+            .then(() => {
+                // console.log('user updated')
+
+                //logout
+                userLogOut()
+                .then(() => console.log('logout'))
+                .catch(error => console.log(error))
+
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            
         })
         .catch(error => {
             console.log(error)
