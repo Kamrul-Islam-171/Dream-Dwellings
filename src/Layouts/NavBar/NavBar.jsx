@@ -29,19 +29,19 @@ const NavBar = () => {
     }
     const navlinks = <>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
+            isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/'>Home</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
+            isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/userProfile'>User Profile</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
+            isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/updateProfile'>Update Profile</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
+            isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/about'>About Us</NavLink>
         <NavLink className={({ isActive }) =>
-            isActive ? "text-lg  font-medium border border-primary-color rounded-lg text-primary-color p-2" : "text-lg font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
+            isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/feedbacks'>Feedbacks</NavLink>
     </>
     return (

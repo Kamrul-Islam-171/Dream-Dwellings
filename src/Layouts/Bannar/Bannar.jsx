@@ -10,13 +10,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 // import required modules
 import { Autoplay, Navigation } from 'swiper/modules';
+import { useEffect } from 'react';
 const Bannar = () => {
+    
     return (
         <div className="">
             <Swiper navigation={true} loop={true} modules={[Navigation, Autoplay]} className="mySwiper" autoplay={{
@@ -25,11 +25,11 @@ const Bannar = () => {
             }}>
                 <SwiperSlide>
 
-                    <div className="h-[calc(100vh-200px)] bg-gradient-to-tr from-[#000000CC] to-[#00000059]" >
+                    <div  className="h-[calc(100vh-200px)] bg-gradient-to-tr from-[#000000CC] to-[#00000059]" >
 
                         <div className=' absolute top-1/3 md:left-1/4 lg:left-1/4 left-10 space-y-4'>
-                            <h1 className='text-5xl font-bold  text-white' 
-                            
+                            <h1 className='text-5xl font-bold  text-white'
+                           
                             >Modern TownHouses</h1>
                             <p className='text-white w-[90%] md:w-4/5 lg:w-3/4'>Discover upscale living at our Modern Townhouses. Elevate your lifestyle with sleek architecture and premium amenities.</p>
                         </div>

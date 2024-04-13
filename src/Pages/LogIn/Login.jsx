@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useForm, } from "react-hook-form"
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import toast from "react-hot-toast";
 
 
 
@@ -33,10 +34,12 @@ const Login = () => {
 
         SignInUser(email, password)
         .then(result => {
-            console.log('signed in', result.user)
+            console.log('signed in', result.user);
+            toast.success('Successfully logged in')
         })
         .catch(error => {
             console.log(error)
+            toast.error('User email or Password does not match');
         })
 
     }

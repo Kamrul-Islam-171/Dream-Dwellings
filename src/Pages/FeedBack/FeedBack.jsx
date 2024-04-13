@@ -1,6 +1,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 
 const FeedBack = () => {
@@ -9,6 +10,9 @@ const FeedBack = () => {
     }, [])
     return (
         <div className="container mx-auto mt-36 mb-20">
+             <Helmet>
+                <title>User Feedbacks</title>
+            </Helmet>
             <div>
                 <h1 className="text-4xl text-center mb-16" data-aos="zoom-out" data-aos-duration='1000'>Clients Testimonials</h1>
 
