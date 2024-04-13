@@ -1,9 +1,25 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthProvider";
 
 
 const NavBar = () => {
+
+    const { user, userLogOut } = useContext(AuthContext);
+    console.log(user)
     const scrollToTop = () => {
         window.scrollTo(0, 0)
+    }
+
+    const handleLogout = () => {
+        console.log('please logout');
+        userLogOut()
+        .then(() => {
+            console.log('sign out successfully');
+        })
+        .catch(error => {
+            console.log(error)
+        })
     }
     const navlinks = <>
         <NavLink className={({ isActive }) =>
@@ -41,8 +57,48 @@ const NavBar = () => {
                         {navlinks}
                     </ul>
                 </div>
+                {/* {
+                    user ?
+                    <>
+                    <button className="btn bg-primary-color text-white">Logout</button>
+                    </> 
+                    : 
+                    <p>login</p>
+                } */}
                 <div className="navbar-end space-x-3 ">
-                    <div className="dropdown dropdown-end">
+                    {
+                        user ?
+                            <>
+                                <div className="dropdown dropdown-end">
+                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-12 rounded-full">
+                                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                        </div>
+                                    </div>
+                                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                        <li>
+                                            <Link className="justify-between">
+                                                Profile
+                                                <span className="badge">New</span>
+                                            </Link>
+                                        </li>
+                                        <li><Link>Settings</Link></li>
+                                        <li><Link>Logout</Link></li>
+                                    </ul>
+                                </div>
+
+                                <div onClick={scrollToTop} className='border  rounded-lg hover:border-primary-color'>
+                                    <button onClick={handleLogout} className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogOut</button>
+                                </div>
+                            </>
+                            :
+                            <>
+                                <div onClick={scrollToTop} className='border  rounded-lg hover:border-primary-color'>
+                                    <Link to='/login' className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogIn</Link>
+                                </div>
+                            </>
+                    }
+                    {/* <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-12 rounded-full">
                                 <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -62,7 +118,7 @@ const NavBar = () => {
 
                     <div onClick={scrollToTop} className='border  rounded-lg hover:border-primary-color'>
                         <Link to='/login' className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogIn</Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

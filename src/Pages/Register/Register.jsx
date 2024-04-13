@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthProvider";
 
 
 const Register = () => {
+
+    const {CreateUser} = useContext(AuthContext);
+    // console.log(CreateUser)
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -18,7 +23,19 @@ const Register = () => {
     })
 
     const onSubmit = (data) => {
-        console.log(data)
+        const name = data.name;
+        const email = data.email;
+        const photoUrl = data.photoUrl;
+        const password = data.password;
+        // console.log(name, email, photoUrl, password)
+
+        CreateUser(email, password)
+        .then(result => {
+            console.log(result.user);
+        })
+        .catch(error => {
+            console.log(error)
+        })
     }
     return (
         <div>
