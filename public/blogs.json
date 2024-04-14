@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "images": [
+            "https://i.ibb.co/XYBsdJs/Screen-Shot-2020-01-23-at-1-09-14-PM.jpg",
+            "https://i.ibb.co/m6HTSgR/6.jpg",
+            "https://cdn.vox-cdn.com/thumbor/1jiACPi_DXMWt39XeYUp-Xv1kgA=/0x0:951x634/1200x0/filters:focal(0x0:951x634):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19624001/4.jpg"
+        ],
+        "title": "Modern Condo in Downtown",
+        "postedBy": "John Doe",
+        "postedDate": "2024-04-14",
+        "commentsCount": 5,
+        "description": "Beautiful modern condo located in the heart of downtown. Close to restaurants, shopping, and public transportation. Spacious layout with high-end finishes and amenities. The condo features an open concept design with large windows that flood the space with natural light. The kitchen boasts stainless steel appliances, granite countertops, and ample storage space. The master bedroom includes a walk-in closet and en-suite bathroom with a luxurious soaking tub. Additional amenities include a fitness center, rooftop terrace, and concierge services. This condo is perfect for professionals or couples looking for a stylish urban retreat. Situated in the vibrant downtown area, residents can enjoy easy access to a variety of dining, entertainment, and cultural attractions. Whether you're strolling along the waterfront, exploring local galleries, or dining at trendy restaurants, there's always something exciting to experience just steps from your doorstep. For those who crave the convenience of city living without sacrificing comfort and style, this modern condo offers the perfect blend of luxury and location. Contact us today to schedule a tour and see why downtown living has never looked better!",
+        "type": "sale"
+    },
+    {
+        "id": 2,
+        "images": [
+            "https://i.ibb.co/TTB95sg/classic-and-charming-family-home-charleston-building-and-development-img-2821aad407509f9a-4-4762-1-b.jpg",
+            "https://a0.muscache.com/im/pictures/monet/Select-1360916/original/8c3c58af-7351-446b-a89c-eed3419c1258",
+            "https://i.ibb.co/yVQNLN6/85414b56-original.jpg"
+        ],
+        "title": "Charming Family Home",
+        "postedBy": "Jane Smith",
+        "postedDate": "2024-04-13",
+        "commentsCount": 3,
+        "description": "Lovely family home in a quiet neighborhood. Features a large backyard, perfect for children and pets. Close to schools and parks. Move-in ready! This charming family home offers comfortable living spaces and plenty of room for relaxation and entertainment. The main floor features a spacious living room, dining area, and updated kitchen with stainless steel appliances. Upstairs, you'll find three bedrooms, including a master suite with a walk-in closet and en-suite bathroom. The fully fenced backyard is ideal for outdoor gatherings, with a patio, garden beds, and room for kids and pets to play. Located in a family-friendly neighborhood close to schools, parks, and shopping, this home is ready for its next loving owner. With its warm and inviting atmosphere, this home is perfect for creating lasting memories with family and friends. Whether you're hosting summer barbecues in the backyard, cozying up by the fireplace on chilly evenings, or simply enjoying quiet moments of relaxation in your own oasis, this charming family home has everything you need to live your best life. Don't miss out on the opportunity to make this house your forever home!",
+        "type": "rent"
+    },
+    {
+        "id": 3,
+        "images": [
+            "https://i.ibb.co/8NGQ3wQ/1-157.jpg",
+            "https://i.ibb.co/M5TQ8hH/15-86.jpg",
+            "https://i.ibb.co/s3z7d7v/akoya.jpg"
+        ],
+        "title": "Luxury Beachfront Villa",
+        "postedBy": "Alex Johnson",
+        "postedDate": "2024-04-12",
+        "commentsCount": 7,
+        "description": "Exquisite beachfront villa with breathtaking ocean views. Private pool, spa, and direct access to the beach. Perfect for a luxurious getaway or entertaining guests. This stunning beachfront villa offers unparalleled luxury and comfort. The expansive living spaces are tastefully decorated with high-end furnishings and decor. Floor-to-ceiling windows provide panoramic views of the ocean and allow natural light to fill the rooms. The gourmet kitchen is equipped with top-of-the-line appliances and a large island for entertaining. Outside, you'll find a private pool, spa, and patio area overlooking the beach. With direct access to the sand, you can enjoy swimming, sunbathing, and water sports right from your doorstep. Whether you're seeking a relaxing retreat or hosting a gathering with friends and family, this villa is the ultimate beachfront paradise. Located in a prestigious beachfront community, this villa offers privacy and seclusion while still being close to all the amenities and attractions of the area. Spend your days lounging by the pool, exploring the nearby beaches, or dining at world-class restaurants. With its luxurious amenities and stunning ocean views, this villa is sure to impress even the most discerning guests. Treat yourself to the vacation of a lifetime and experience the beauty and serenity of beachfront living at its finest!",
+        "type": "sale"
+    },
+    {
+        "id": 4,
+        "images": [
+            "https://i.ibb.co/DMHM740/f434accf7c0f3cfcef31128df2cdd93e.jpg",
+            "https://i.ibb.co/KrSgy2S/276e8099-f9dd-46e4-9db1-7c6e075147a1.jpg",
+            "https://i.ibb.co/JH2gKc4/d8078a3a95d72a45d43b7c38fc89f828-p-e.jpg"
+        ],
+        "title": "Cozy Apartment in Historic District",
+        "postedBy": "Emily Brown",
+        "postedDate": "2024-04-11",
+        "commentsCount": 2,
+        "description": "Quaint apartment located in the historic district. Walking distance to museums, theaters, and cultural attractions. Ideal for those seeking a unique living experience. This cozy apartment offers comfortable living in the heart of the historic district. The unit features hardwood floors, exposed brick walls, and tall ceilings for a classic urban feel. The open layout includes a living area, dining space, and kitchenette with modern appliances. The bedroom is tucked away for privacy and includes a built-in closet and en-suite bathroom. Located within walking distance to museums, theaters, and cultural attractions, this apartment is perfect for those who want to experience the charm and history of the city. Spend your weekends exploring the nearby landmarks, attending performances at local theaters, or browsing the eclectic shops and galleries that line the streets. With its convenient location and unique character, this apartment offers the perfect blend of modern comfort and historic charm. Whether you're a history buff, an art enthusiast, or simply someone who appreciates the beauty of old-world architecture, this apartment is sure to capture your heart and inspire your imagination.",
+        "type": "rent"
+    },
+    {
+        "id": 5,
+        "images": [
+            "https://i.ibb.co/hWPCrX5/85398881765450fd0e40046-54738762-1920-webp-big.jpg",
+            "https://i.ibb.co/JpV5mHs/q6-Pgdcb-Rh-DM9-Gr-Tttw-AEl-Zzm-Vi-Pqln-Wo-Qap4-Ezk-FGxx-Xfhmyhty-DTxk0e-Nqo-O0xg5k-Kva-Rmv9xjcl-F18.jpg",
+            "https://i.ibb.co/QPw7Gx1/property-9825977-53970298-dhd.jpg"
+        ],
+        "title": "Spacious Townhouse with Garden",
+        "postedBy": "David Johnson",
+        "postedDate": "2024-04-10",
+        "commentsCount": 8,
+        "description": "Impressive townhouse with ample living space and a private garden. Perfect for families or those who love to entertain. Located in a sought-after neighborhood. This spacious townhouse offers the perfect blend of comfort and style. The main floor features a bright and airy living room, dining area, and gourmet kitchen with high-end appliances. Upstairs, you'll find three bedrooms, including a luxurious master suite with a walk-in closet and spa-like bathroom. The lower level includes a cozy family room, home office, and access to the private garden. With plenty of room for outdoor dining and relaxation, the garden is an oasis in the city. Located in a sought-after neighborhood, this townhouse is close to parks, schools, and shopping. Whether you're hosting dinner parties in the open-concept kitchen, enjoying movie nights in the family room, or gardening in the sun-filled backyard, this townhouse is sure to impress. Don't miss out on the opportunity to make this your new home!",
+        "type": "sale"
+    },
+    {
+        "id": 6,
+        "images": [
+            "https://i.ibb.co/0qsrb3H/Lux-Mountain-Retreat57.jpg",
+            "https://i.ibb.co/mC0VSRy/gatlinburg-cabin-bear-mountain-retreat-living-3.jpg",
+            "https://i.ibb.co/D1RWqHG/8c3b6aa9-e040-4710-9199-742e57f22b97.jpg"
+        ],
+        "title": "Mountain Retreat Cabin",
+        "postedBy": "Sarah White",
+        "postedDate": "2024-04-09",
+        "commentsCount": 4,
+        "description": "Cozy cabin nestled in the mountains. Surrounded by nature, with hiking trails and scenic views. Perfect for outdoor enthusiasts. Escape to the mountains in this charming cabin retreat. The cabin features a rustic interior with wood-paneled walls and a stone fireplace. The open-concept living area includes a cozy seating area, dining space, and kitchenette. Upstairs, you'll find a loft bedroom with panoramic views of the surrounding forest. Outside, you can relax on the deck and enjoy the sights and sounds of nature. With hiking trails and scenic overlooks nearby, there's plenty to explore right outside your door. Whether you're seeking a weekend getaway or a peaceful retreat, this mountain cabin is the perfect place to relax and recharge. Pack your bags and come experience the beauty of mountain living!",
+        "type": "rent"
+    }
+]

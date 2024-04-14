@@ -6,7 +6,7 @@ import { AuthContext } from "../../Context/AuthProvider";
 const NavBar = () => {
 
     const { user, userLogOut } = useContext(AuthContext);
-    const [photo, setPhoto] = useState(null); 
+    const [photo, setPhoto] = useState(null);
     // console.log(user);
 
     // useEffect(() => {
@@ -15,7 +15,7 @@ const NavBar = () => {
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
-    console.log(photo)
+    // console.log(photo)
 
     const handleLogout = () => {
         console.log('please logout');
@@ -28,7 +28,7 @@ const NavBar = () => {
             })
     }
     const navlinks = <>
-        <NavLink className={({ isActive }) =>
+        {/* <NavLink className={({ isActive }) =>
             isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
         } to='/'>Home</NavLink>
         <NavLink className={({ isActive }) =>
@@ -42,6 +42,25 @@ const NavBar = () => {
         } to='/about'>About Us</NavLink>
         <NavLink className={({ isActive }) =>
             isActive ? "  font-medium border border-primary-color rounded-lg text-primary-color p-2" : " font-medium hover:bg-secondary-color p-2 rounded-lg hover:text-white"
+        } to='/feedbacks'>Feedbacks</NavLink> */}
+
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : " font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to='/'>Home</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : " font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to='/userProfile'>User Profile</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to='/updateProfile'>Update Profile</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to={`/blogs/${1}`}>Blogs</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to='/about'>About Us</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
         } to='/feedbacks'>Feedbacks</NavLink>
     </>
     return (

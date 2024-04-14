@@ -9,6 +9,7 @@ import UserProfile from "../../Pages/UserProfile/UserProfile";
 import Register from "../../Pages/Register/Register";
 import FeedBack from "../../Pages/FeedBack/FeedBack";
 import UpdateProfile from "../../Pages/UpdateProfile/UpdateProfile";
+import Blogs from "../../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -49,6 +50,11 @@ const router = createBrowserRouter([
             {
                 path:'/updateProfile',
                 element:<UpdateProfile></UpdateProfile>
+            },
+            {
+                path:'/blogs/:id',
+                element:<Blogs></Blogs>,
+                loader: () => fetch('/blogs.json')
             }
         ]
     },
