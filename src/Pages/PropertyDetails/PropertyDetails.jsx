@@ -41,15 +41,15 @@ const PropertyDetails = () => {
                     {/* <img src={property[0]?.insideImage1} className='w-full object-cover rounded-lg' alt="" /> */}
                     {/* image */}
                 </div>
-                <div className='space-y-3'>
+                <div className='space-y-3 lg:w-[49%]'>
                     {/* details */}
                     <h1 className='text-2xl font-semibold text-primary-color'>{property[0]?.estate_title}</h1>
                     <p>{property[0]?.segment_name}</p>
-                    <p><span className='font-semibold'>Description :</span> {property[0]?.description}</p>
+                    <p className='text-justify'><span className='font-semibold'>Description :</span> {property[0]?.description}</p>
                     <div>
                         <p className='font-semibold'>Facilities : </p>
                         {
-                            property[0]?.facilities.map(item => <li key={id}>{item}</li>)
+                            property[0]?.facilities.map(item => <li  key={id}>{item}</li>)
                         }
                     </div>
                     <p>For : <span className='bg-primary-color text-white px-3 rounded-sm'>{property[0]?.status}</span></p>

@@ -5,6 +5,7 @@ import DetailsSlide from "../../Layouts/DetailsSlider/DetailsSlide";
 import BlogCard from "../../Layouts/BlogCard/BlogCard";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
+import { format } from "date-fns";
 
 
 
@@ -36,7 +37,7 @@ const Blogs = () => {
             <Helmet>
                 <title>Blogs</title>
             </Helmet>
-            <div >
+            {/* <div >
                 <DetailsSlide
                     image1={blogDetails[0]?.images[0]}
                     image2={blogDetails[0]?.images[1]}
@@ -44,6 +45,17 @@ const Blogs = () => {
                 >
 
                 </DetailsSlide>
+            </div> */}
+            <div className=" container mx-auto gap-10  flex flex-col lg:flex-row md:flex-row">
+                <div className=" h-[500px] rounded-lg lg:w-[48%] md:w-[48%] mt-16 shadow-2xl">
+                    <img className="w-full h-full object-cover rounded-lg" src={blogDetails[0]?.images[0]} alt="" />
+                </div>
+                <div className=" h-[500px] lg:w-[48%] md:w-[48%] rounded-lg lg:mt-16 md:mt-16 shadow-2xl">
+                    <img className="w-full h-full object-cover rounded-lg" src={blogDetails[0]?.images[1]} alt="" />
+                </div>
+            </div>
+            <div className="container mx-auto h-[500px] rounded-lg lg:w-3/5 md:w-[2/3] mt-10 shadow-2xl">
+                <img className="w-full h-full object-cover rounded-lg" src={blogDetails[0]?.images[2]} alt="" />
             </div>
             <div className="container mx-auto mt-10 space-y-5 bg-white p-10">
                 <h1 className="text-5xl">{blogDetails[0]?.title}</h1>
@@ -51,8 +63,9 @@ const Blogs = () => {
                     <div className="flex gap-2 items-center">
                         <span><FaRegCalendarAlt /></span>
                         <p>Posted by ,</p>
-                        <p>{blogDetails[0]?.postedBy}</p>
+                        <p>{blogDetails[0]?.postedBy} , </p>
                         <p>{blogDetails[0]?.postedDate}</p>
+                        {/* <p>{format(blogDetails[0]?.postedDate, 'MMMM do, yyyy')}</p> */}
                     </div>
                     <div className="flex gap-2 items-center">
                         <span><FaRegComment /></span>

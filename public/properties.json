@@ -1,116 +1,117 @@
 [
     {
-        "image": "https://i.ibb.co/41N0nST/95cb36ca-a78f-4bcb-a89a-d386473ab2bb.jpg",
-        "insideImage1":"https://i.ibb.co/zJHBYsL/family-home-outdoor-living-room-pool-1-outdoor-family-thumb-970xauto-31470.jpg",
-        "insideImage2":"https://i.ibb.co/X5gnqGL/Kerala-20home-20-Aavishkar-20-Architects.jpg",
-        "insideImage3":"https://i.ibb.co/R4vQ1nP/Small-courtyard-design.jpg",
-        "estate_title": "Single-Family Home with Garden",
-        "id": 1,
-        "segment_name": "Single-Family Homes",
-        "description": "Beautiful single-family home with a large garden and modern amenities.",
-        "price": "$600,000",
-        "status": "sale",
-        "area": "3000 sq ft",
-        "location": "123 Main St, Suburban Neighborhood",
-        "facilities": [
-            "Living Room",
-            "Garden",
-            "3 Rooms"
-        ]
+      "id": 1,
+      "image": "https://i.ibb.co/41N0nST/95cb36ca-a78f-4bcb-a89a-d386473ab2bb.jpg",
+      "insideImage1": "https://i.ibb.co/zJHBYsL/family-home-outdoor-living-room-pool-1-outdoor-family-thumb-970xauto-31470.jpg",
+      "insideImage2": "https://i.ibb.co/X5gnqGL/Kerala-20home-20-Aavishkar-20-Architects.jpg",
+      "insideImage3": "https://i.ibb.co/R4vQ1nP/Small-courtyard-design.jpg",
+      "estate_title": "Single-Family Home with Garden",
+      "segment_name": "Single-Family Homes",
+      "description": "This beautiful single-family home is a dream come true for those seeking comfort, style, and a connection to nature. With a spacious garden and modern amenities, it offers the perfect blend of indoor and outdoor living. The interior features an inviting living room where you can relax with family and friends, as well as three cozy rooms that provide ample space for everyone. The large windows flood the space with natural light and offer views of the lush greenery outside. Step into the garden and you'll find yourself in your own private oasis, surrounded by trees and flowers. It's the perfect spot for morning coffee, afternoon barbecues, or simply enjoying the beauty of nature.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "123 Main St, Suburban Neighborhood",
+      "facilities": [
+        "Living Room",
+        "Garden",
+        "3 Rooms"
+      ]
     },
     {
-        "image": "https://i.ibb.co/kMyyFqn/20180817-Crumley-Night-5-of-15-jxd3vl-0.jpg",
-        "estate_title": "Modern Townhouse in Downtown",
-        "insideImage1":"https://i.ibb.co/WWp2mQW/Minimalist-modern-home-interior-design-with-a-patio.jpg",
-        "insideImage2":"https://i.ibb.co/km1wDPB/Southridge-10-Dining-Living.jpg",
-        "insideImage3":"https://i.ibb.co/2yxfHBC/a5a802e318692d1c4f98565ae22aeaf6.jpg",
-        "id": 2,
-        "segment_name": "Townhouse",
-        "description": "Stylish townhouse located in the heart of downtown with rooftop terrace.",
-        "price": "$450,000",
-        "status": "sale",
-        "area": "2000 sq ft",
-        "location": "456 Elm St, Downtown",
-        "facilities": [
-            "Living Room",
-            "Garage",
-            "2 Rooms"
-        ]
+      "id": 2,
+      "image": "https://i.ibb.co/kMyyFqn/20180817-Crumley-Night-5-of-15-jxd3vl-0.jpg",
+      "insideImage1": "https://i.ibb.co/WWp2mQW/Minimalist-modern-home-interior-design-with-a-patio.jpg",
+      "insideImage2": "https://i.ibb.co/km1wDPB/Southridge-10-Dining-Living.jpg",
+      "insideImage3": "https://i.ibb.co/2yxfHBC/a5a802e318692d1c4f98565ae22aeaf6.jpg",
+      "estate_title": "Modern Townhouse in Downtown",
+      "segment_name": "Townhouse",
+      "description": "Welcome to urban living at its finest! This stylish modern townhouse is located in the heart of downtown, offering convenience, comfort, and sophistication. With sleek design elements and high-end finishes throughout, it's the epitome of contemporary living. The interior features an open-concept layout with a spacious living room, perfect for entertaining guests or relaxing after a long day. The gourmet kitchen is a chef's dream, with state-of-the-art appliances and plenty of counter space for meal prep. Upstairs, you'll find two cozy rooms that provide the perfect retreat at the end of the day. But the real showstopper? The rooftop terrace, where you can enjoy stunning views of the city skyline while sipping cocktails or soaking up the sun.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "456 Elm St, Downtown",
+      "facilities": [
+        "Living Room",
+        "Garage",
+        "2 Rooms"
+      ]
     },
     {
-        "image": "https://i.ibb.co/GMN9YsQ/Marina-Del-Rey-Luxury-High-Rise-Living.jpg",
-        "estate_title": "Apartment in High-Rise Building",
-        "insideImage1":"https://i.ibb.co/5BMFFkJ/e9a4ec0636afec39573618737b973e5d.jpg",
-        "insideImage2":"https://i.ibb.co/Byc2KTQ/filip-radojkovic-render1.jpg",
-        "insideImage3":"https://i.ibb.co/zr7sQcq/24e8f08ba83e34213572acbdb1061bf0.jpg",
-        "id": 3,
-        "segment_name": "Apartments",
-        "description": "Elegant apartment with panoramic city views and top-notch facilities.",
-        "price": "$800,000",
-        "status": "sale",
-        "area": "1800 sq ft",
-        "location": "789 Oak St, City Center",
-        "facilities": [
-            "Living Room",
-            "Gym",
-            "Swimming Pool"
-        ]
+      "id": 3,
+      "image": "https://i.ibb.co/GMN9YsQ/Marina-Del-Rey-Luxury-High-Rise-Living.jpg",
+      "insideImage1": "https://i.ibb.co/5BMFFkJ/e9a4ec0636afec39573618737b973e5d.jpg",
+      "insideImage2": "https://i.ibb.co/Byc2KTQ/filip-radojkovic-render1.jpg",
+      "insideImage3": "https://i.ibb.co/zr7sQcq/24e8f08ba83e34213572acbdb1061bf0.jpg",
+      "estate_title": "Apartment in High-Rise Building",
+      "segment_name": "Apartments",
+      "description": "Experience luxury living in the heart of the city with this elegant apartment in a high-rise building. Offering panoramic city views and top-notch amenities, it's the perfect blend of style and comfort. The interior features a spacious living room where you can entertain guests or unwind after a long day. The sleek modern kitchen is equipped with state-of-the-art appliances and plenty of counter space for meal prep. Upstairs, you'll find a cozy room that provides the perfect retreat at the end of the day. But the real highlight? The building amenities, including a fitness center, swimming pool, and concierge service.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "789 Oak St, City Center",
+      "facilities": [
+        "Living Room",
+        "Gym",
+        "Swimming Pool"
+      ]
     },
     {
-        "image": "https://i.ibb.co/yQxfbR2/Wolf-Runhigh-1-t670.jpg",
-        "estate_title": "Modern Student Housing Complex",
-        "insideImage1":"https://i.ibb.co/yQ3wRfG/new-standards-in-student-housing-interior-design-2.jpg",
-        "insideImage2":"https://i.ibb.co/3RVmvPT/a67c8308.jpg",
-        "insideImage3":"https://i.ibb.co/bJtLds2/Student-Housing-Renovation-Clark-Nexsen-1200.jpg",
-        "id": 4,
-        "segment_name": "Student Housing",
-        "description": "Contemporary student housing with study lounges and fitness center.",
-        "price": "$1,200/month",
-        "status": "rent",
-        "area": "500 sq ft",
-        "location": "101 College Ave, Near University Campus",
-        "facilities": [
-            "Studio",
-            "Study Lounge",
-            "Fitness Center"
-        ]
+      "id": 4,
+      "image": "https://i.ibb.co/yQxfbR2/Wolf-Runhigh-1-t670.jpg",
+      "estate_title": "Modern Student Housing Complex",
+      "insideImage1": "https://i.ibb.co/yQ3wRfG/new-standards-in-student-housing-interior-design-2.jpg",
+      "insideImage2": "https://i.ibb.co/3RVmvPT/a67c8308.jpg",
+      "insideImage3": "https://i.ibb.co/bJtLds2/Student-Housing-Renovation-Clark-Nexsen-1200.jpg",
+      "segment_name": "Student Housing",
+      "description": "Calling all students! This modern student housing complex is the perfect place to call home during your college years. Offering contemporary design and top-notch amenities, it's the ultimate student living experience. The interior features a cozy studio with plenty of space to study, relax, and socialize. The communal areas include study lounges, a fitness center, and outdoor spaces where you can hang out with friends or catch some sun. Located near the university campus, this housing complex offers easy access to classes, libraries, and campus events.",
+      "price": "$1,200/month",
+      "status": "rent",
+      "area": "500 sq ft",
+      "location": "101 College Ave, Near University Campus",
+      "facilities": [
+        "Studio",
+        "Study Lounge",
+        "Fitness Center"
+      ]
     },
     {
-        "image": "https://i.ibb.co/tsgz1KN/245200-standard.jpg",
-        "estate_title": "Senior Living Community with Resort Amenities",
-        "insideImage1":"https://i.ibb.co/M6YJ2Np/9-luxury-senior-living-amenities-youll-fall-in-love-with.jpg",
-        "insideImage2":"https://i.ibb.co/JKmn9t1/veranda-club-special-features-sensations-dining-room.jpg",
-        "insideImage3":"https://i.ibb.co/qn55YHb/hoseniorcare210723-photos.jpg",
-        "id": 5,
-        "segment_name": "Senior Living Community",
-        "description": "Retirement community offering resort-style living for seniors.",
-        "price": "$3,000/month",
-        "status": "rent",
-        "area": "1200 sq ft",
-        "location": "789 Elderly Dr, Senior Living District",
-        "facilities": [
-            "1 Room ",
-            "Swimming Pool",
-            "Restaurant"
-        ]
+      "id": 5,
+      "image": "https://i.ibb.co/tsgz1KN/245200-standard.jpg",
+      "estate_title": "Senior Living Community with Resort Amenities",
+      "insideImage1": "https://i.ibb.co/M6YJ2Np/9-luxury-senior-living-amenities-youll-fall-in-love-with.jpg",
+      "insideImage2": "https://i.ibb.co/JKmn9t1/veranda-club-special-features-sensations-dining-room.jpg",
+      "insideImage3": "https://i.ibb.co/qn55YHb/hoseniorcare210723-photos.jpg",
+      "segment_name": "Senior Living Community",
+      "description": "Welcome to resort-style living for seniors! This senior living community offers all the amenities and services you need to live life to the fullest. The interior features a cozy room with plenty of space to relax and unwind. But the real highlight? The resort-style amenities, including a swimming pool, restaurant, and wellness center. Whether you're taking a dip in the pool, enjoying a gourmet meal with friends, or attending a fitness class, you'll love the vibrant community atmosphere.",
+      "price": "$3,000/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "789 Elderly Dr, Senior Living District",
+      "facilities": [
+        "1 Room ",
+        "Swimming Pool",
+        "Restaurant"
+      ]
     },
     {
-        "image": "https://i.ibb.co/FWyZYSp/image.png",
-        "estate_title": "Seaside Vacation Rental Villa",
-        "insideImage1":"https://i.ibb.co/bgKV0Zj/dune-allen-beach-home-6245420496-3ea3afed-full.jpg",
-        "insideImage2":"https://i.ibb.co/j4dF1d0/vb-5-090221.jpg",
-        "insideImage3":"https://i.ibb.co/TmNBsML/49-29-1674661360.jpg",
-        "id": 6,
-        "segment_name": "Seaside Rental Villa",
-        "description": "Charming villa by the sea offering a perfect retreat for vacationers.",
-        "price": "$300/night",
-        "status": "rent",
-        "area": "2000 sq ft",
-        "location": "123 Beachfront Ave, Seaside Resort",
-        "facilities": [
-            "3 Rooms",
-            "Ocean view ",
-            "Beach"
-        ]
+      "id": 6,
+      "image": "https://i.ibb.co/FWyZYSp/image.png",
+      "estate_title": "Seaside Vacation Rental Villa",
+      "insideImage1": "https://i.ibb.co/bgKV0Zj/dune-allen-beach-home-6245420496-3ea3afed-full.jpg",
+      "insideImage2": "https://i.ibb.co/j4dF1d0/vb-5-090221.jpg",
+      "insideImage3": "https://i.ibb.co/TmNBsML/49-29-1674661360.jpg",
+      "segment_name": "Seaside Rental Villa",
+      "description": "Escape to paradise in this charming seaside vacation rental villa. Located in a picturesque seaside resort, it offers the perfect retreat for vacationers seeking sun, sand, and relaxation. The interior features three cozy rooms where you can unwind after a day at the beach. But the real highlight? The ocean view, which you can enjoy from the comfort of your own villa. Step outside and you'll find yourself on the sandy shores of the beach, where you can swim, sunbathe, or simply stroll along the shoreline.",
+      "price": "$300/night",
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "123 Beachfront Ave, Seaside Resort",
+      "facilities": [
+        "3 Rooms",
+        "Ocean view ",
+        "Beach"
+      ]
     }
-]
+  ]
+  
