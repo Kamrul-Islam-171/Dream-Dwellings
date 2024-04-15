@@ -73,7 +73,7 @@ const Blogs = () => {
                     </div>
                 </div>
                 <div className="text-gray-500">
-                    <p>
+                    <p className="text-justify">
                         {blogDetails[0]?.description}
                     </p>
                 </div>

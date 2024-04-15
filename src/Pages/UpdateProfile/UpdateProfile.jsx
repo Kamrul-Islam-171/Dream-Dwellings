@@ -2,8 +2,11 @@ import { Helmet } from "react-helmet-async";
 
 import { Link } from "react-router-dom";
 import { useForm, } from "react-hook-form"
+import { useContext } from "react";
+import { AuthContext } from "../../Context/AuthProvider";
 
 const UpdateProfile = () => {
+    const {udpateUserProfile} = useContext(AuthContext);
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -18,7 +21,10 @@ const UpdateProfile = () => {
     })
 
     const onSubmit = (data) => {
-        console.log(data)
+        // https://i.ibb.co/bWPxPRj/887db0c29b59660d5c7e2b3384902c4b.jpg
+        udpateUserProfile(data.name, data.photoUrl)
+        .then(() =>{console.log('profile updated')})
+        .catch(error => console.log(error))
     }
     return (
         <div>

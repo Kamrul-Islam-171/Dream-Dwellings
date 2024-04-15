@@ -1,25 +1,14 @@
 
-// Import Swiper React components
 
-
-// Import Swiper styles
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
-
 import 'swiper/swiper-bundle.css';
 
 
-
-
-// import required modules
 import { Autoplay, Navigation } from 'swiper/modules';
 
 const Bannar = () => {
-    
     
 
 
