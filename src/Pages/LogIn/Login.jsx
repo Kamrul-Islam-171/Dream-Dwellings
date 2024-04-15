@@ -2,7 +2,7 @@
 
 import { Helmet } from "react-helmet-async";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm, } from "react-hook-form"
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -11,6 +11,9 @@ import toast from "react-hot-toast";
 
 
 const Login = () => {
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const {SignInUser, udpateUserProfile, user, GoogleLogin, GithubLogin} = useContext(AuthContext);
     // console.log(GithubLogin); 
@@ -34,8 +37,9 @@ const Login = () => {
 
         SignInUser(email, password)
         .then(result => {
-            console.log('signed in', result.user);
+            // console.log('signed in', result.user);
             toast.success('Successfully logged in')
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error => {
             console.log(error)
@@ -48,7 +52,9 @@ const Login = () => {
     const handleGoogleLogin = () => {
         GoogleLogin()
         .then(() => {
-            console.log('google login done')
+            // console.log('google login done')
+            toast.success('Successfully logged in')
+            navigate(location?.state ? location.state : '/')
         })
         .catch(error => console.log(error))
     }
@@ -56,12 +62,15 @@ const Login = () => {
     const handleGithubLogin = () => {
         GithubLogin()
         .then((result) => {
-            console.log('git hub login done')
+            // console.log('git hub login done')
+            toast.success('Successfully logged in')
+            
             // console.log(result.user.photoURL)
             // console.log(result.user.reloadUserInfo.providerUserInfo[0].screenName)
             udpateUserProfile(result.user.reloadUserInfo.providerUserInfo[0].screenName, result.user.photoURL)
             .then(() => {
                 console.log('profile updated by github')
+                navigate(location?.state ? location.state : '/')
 
             })
             .catch(error => {

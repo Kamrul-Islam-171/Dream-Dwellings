@@ -10,6 +10,7 @@ import Register from "../../Pages/Register/Register";
 import FeedBack from "../../Pages/FeedBack/FeedBack";
 import UpdateProfile from "../../Pages/UpdateProfile/UpdateProfile";
 import Blogs from "../../Pages/Blogs/Blogs";
+import PrivateRoute from "../../Utilities/PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -36,24 +37,24 @@ const router = createBrowserRouter([
             },
             {
                 path:'/propertyDetails/:id',
-                element : <PropertyDetails></PropertyDetails>,
+                element : <PrivateRoute><PropertyDetails></PropertyDetails></PrivateRoute>,
                 loader:() => fetch('/properties.json')
             },
             {
                 path:'/userProfile',
-                element:<UserProfile></UserProfile>
+                element:<PrivateRoute><UserProfile></UserProfile></PrivateRoute>
             },
             {
                 path:'/feedbacks',
-                element:<FeedBack></FeedBack>
+                element:<PrivateRoute><FeedBack></FeedBack></PrivateRoute>
             },
             {
                 path:'/updateProfile',
-                element:<UpdateProfile></UpdateProfile>
+                element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             },
             {
                 path:'/blogs/:id',
-                element:<Blogs></Blogs>,
+                element:<PrivateRoute><Blogs></Blogs></PrivateRoute>,
                 loader: () => fetch('/blogs.json')
             }
         ]
