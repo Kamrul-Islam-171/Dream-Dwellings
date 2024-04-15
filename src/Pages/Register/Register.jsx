@@ -5,9 +5,14 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 import { FaEyeSlash } from "react-icons/fa";
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Register = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     const { CreateUser, udpateUserProfile, userLogOut } = useContext(AuthContext);
     // console.log(CreateUser)
@@ -68,7 +73,7 @@ const Register = () => {
 
 
             <div className="flex justify-center items-center mt-32 mb-24">
-                <div className="w-full max-w-md p-8 space-y-3 rounded-xl border-primary-color border text-gray-700">
+                <div data-aos='fade-right' data-aos-duration = '1000' className="w-full max-w-md p-8 space-y-3 rounded-xl border-primary-color border text-gray-700">
                     <h1 className="text-2xl font-bold text-center text-primary-color">Register Now</h1>
                     <form noValidate="" className="space-y-6 " onSubmit={handleSubmit(onSubmit)}>
                         <div className="space-y-1 text-sm">
