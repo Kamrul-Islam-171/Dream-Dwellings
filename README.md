@@ -14,7 +14,7 @@ Live link :
 
 
 ### Packages Used:
-- React Router
+- React Router(https://reactrouter.com/en/main)
 - react-helmet-async
 - swiper.js
 - react-icons
@@ -25,3 +25,8 @@ Live link :
 - react-hot-toast
 - props-types
 - react-hook-form
+
+
+### Frameworks Used : 
+- Tailwind CSS
+- Daisy UI
