@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import '../Properties/card.css';
-import PropTypes from 'prop-types'; // ES6
+import PropTypes from 'prop-types'; 
 
 
 const BlogCard = ({ blog }) => {
@@ -27,7 +27,7 @@ const BlogCard = ({ blog }) => {
                 </div>
             </div>
 
-            {/* <h1>{title}</h1> */}
+            
         </div>
     );
 };
