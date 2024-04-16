@@ -2,10 +2,6 @@
 
 Live link :  
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ### Features and Characteristics : 
 - **User-friendly Navigation.** (The website features a clear and intuitive navigation bar with easy access to essential sections such as Home, Update Profile, User Profile, Blogs, Feedbacks, and About Us.)
@@ -15,3 +11,17 @@ Currently, two official plugins are available:
 - **About Us Page.** (The About Us section provides detailed information about the company, its mission, vision,  and any other relevant details. This helps build trust and credibility among users.)
 - **Responsive Design.** (The website is designed to be responsive across various devices and screen sizes, ensuring a seamless browsing experience for users whether they access the site from a desktop, tablet, or smartphone.)
 - **Secure and Privacy-focused.** (Dream Dwellings prioritizes the security and privacy of its users' data. Robust security measures are in place to protect sensitive information, and user data is handled in accordance with privacy regulations.)
+
+
+### Packages Used:
+- React Router
+- react-helmet-async
+- swiper.js
+- react-icons
+- Aos
+- date-fns
+- animate.css
+- react-spinners
+- react-hot-toast
+- props-types
+- react-hook-form
