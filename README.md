@@ -14,7 +14,7 @@ Live link :
 
 
 ### Packages Used:
-- React Router(https://reactrouter.com/en/main)
+- [React Router](https://reactrouter.com/en/main)
 - react-helmet-async
 - swiper.js
 - react-icons
