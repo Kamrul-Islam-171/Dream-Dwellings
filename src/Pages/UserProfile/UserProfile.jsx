@@ -7,8 +7,13 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
 const UserProfile = () => {
+    
     const { user } = useContext(AuthContext);
     console.log(user);
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
 
     useEffect(() => {
         AOS.init();
@@ -32,7 +37,7 @@ const UserProfile = () => {
                         </div>
                         <h1 className="text-4xl font-bold text-gray-800">{user?.displayName}</h1>
                         <h1 className="text-gray-800 text-lg">{user?.email}</h1>
-            
+                        <Link onClick={scrollToTop} to={'/updateProfile'}><p className="btn hover:text-primary-color hover:bg-white  hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5 mb-5">Update Profile</p></Link>
 
                 </div>
             </div>

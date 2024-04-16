@@ -29,7 +29,6 @@ const Login = () => {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm({
         criteriaMode: "all",
@@ -69,19 +68,23 @@ const Login = () => {
         GithubLogin()
         .then((result) => {
             // console.log('git hub login done')
-            toast.success('Successfully logged in')
+            // toast.success('Successfully logged in')
             
             // console.log(result.user.photoURL)
             // console.log(result.user.reloadUserInfo.providerUserInfo[0].screenName)
             udpateUserProfile(result.user.reloadUserInfo.providerUserInfo[0].screenName, result.user.photoURL)
             .then(() => {
                 console.log('profile updated by github')
-                navigate(location?.state ? location.state : '/')
+                toast.success('Successfully logged in')
+                // location.reload();
+                navigate(location?.state ? location.state : '/');
+                // location.reload();
 
             })
             .catch(error => {
                 console.log(error)
             })
+            // location.reload();
         })
         .catch(error => {
             console.log(error)

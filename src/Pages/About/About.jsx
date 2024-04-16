@@ -28,10 +28,10 @@ const About = () => {
                 <div>
                     <h1 className="text-4xl text-center" data-aos="zoom-in" data-aos-duration="600">Our Story</h1>
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-8 lg:w-2/3 mx-auto mt-10">
-                        <div className="bg-secondary-color text-gray-700 px-5 py-8 lg:px-16 lg:py-16 md:px-16 md:py-16" data-aos='zoom-in-right' data-aos-delay="300">
+                        <div className="bg-secondary-color text-gray-700 px-5 py-8 lg:px-16 lg:py-16 md:px-16 md:py-16" data-aos='zoom-in-right' data-aos-duration='1000' data-aos-delay="300">
                             <p className="text-justify">Founded with a passion for connecting individuals with their ideal living spaces, Dream Dwellings has been transforming houses into homes since 2016.</p>
                         </div>
-                        <div className="bg-third-color text-gray-700 px-5 py-8 lg:px-16 lg:py-16 md:px-16 md:py-16" data-aos='zoom-in-left' data-aos-delay="300">
+                        <div className="bg-third-color text-gray-700 px-5 py-8 lg:px-16 lg:py-16 md:px-16 md:py-16" data-aos='zoom-in-left' data-aos-duration='1000' data-aos-delay="300">
                             <p className="text-justify">Our journey began with a simple belief: that everyone deserves a place they can truly call their own. Over the years, we've built a reputation for excellence, integrity, and personalized service, earning the trust of countless clients along the way.</p>
                         </div>
                     </div>
@@ -39,12 +39,12 @@ const About = () => {
 
 
                 <div className="mt-16 grid gap-8 lg:grid-cols-2 md:grid-cols-2">
-                    <div className="border border-primary-color px-10 py-12 space-y-5" data-aos="fade-right" data-aos-duration='600'>
+                    <div className="border border-primary-color px-10 py-12 space-y-5" data-aos="fade-right" data-aos-duration='1000'>
                         <h1 className="text-4xl  text-center">Our Vision</h1>
                         <p className="text-justify">Our vision is to be the cornerstone of your journey towards finding your perfect dwelling, whether it's a cozy single-family home, a luxurious apartment, a serene seaside retreat, or a vibrant student housing option. We aim to create a seamless and enjoyable process that leaves you with not just a house, but a home filled with memories and meaning.</p>
                     </div>
 
-                    <div className="border border-primary-color px-10 py-12 space-y-5" data-aos="fade-left" data-aos-duration='600'>
+                    <div className="border border-primary-color px-10 py-12 space-y-5" data-aos="fade-left" data-aos-duration='1000'>
                         <h1 className="text-4xl text-center">Our Mission</h1>
                         <p className="text-justify">Our mission is to make the process of buying or renting a home as seamless and enjoyable as possible. Whether you're a first-time buyer, a seasoned investor, or someone looking for the perfect rental, we're here to provide the guidance, support, and expertise you need to make the right decision for you and your family.</p>
                     </div>

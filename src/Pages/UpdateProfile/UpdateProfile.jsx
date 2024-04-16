@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm, } from "react-hook-form"
 import { useContext } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -8,10 +8,12 @@ import { AuthContext } from "../../Context/AuthProvider";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import toast from "react-hot-toast";
 
 
 const UpdateProfile = () => {
-    const {udpateUserProfile} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const { udpateUserProfile } = useContext(AuthContext);
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -32,8 +34,15 @@ const UpdateProfile = () => {
     const onSubmit = (data) => {
         // https://i.ibb.co/bWPxPRj/887db0c29b59660d5c7e2b3384902c4b.jpg
         udpateUserProfile(data.name, data.photoUrl)
-        .then(() =>{console.log('profile updated')})
-        .catch(error => console.log(error))
+            .then(() => {
+                console.log('profile updated')
+                toast.success('Profile Updated Successfully');
+                navigate('/userProfile')
+                location.reload();
+            })
+            .catch(error => console.log(error))
+
+
     }
     return (
         <div>
@@ -60,8 +69,8 @@ const UpdateProfile = () => {
                             </div>
                             <button className="block w-full p-3 text-center rounded-sm  bg-primary-color text-gray-100 hover:bg-secondary-color">Update</button>
                         </form>
-                       
-                       
+
+
                     </div>
                 </div>
 

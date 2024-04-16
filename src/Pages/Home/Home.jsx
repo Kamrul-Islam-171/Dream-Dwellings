@@ -6,10 +6,14 @@ import ChoosingUs from "../../Layouts/ChoosingUs/ChoosingUs";
 import Services from "../../Layouts/Services/Services";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 const Home = () => {
     const data = useLoaderData();
+    useEffect(() => {
+        AOS.init();
+    }, [])
     // console.log(data)
     return (
 

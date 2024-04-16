@@ -2,23 +2,47 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useForm } from 'react-hook-form';
 
 
 const FeedBack = () => {
     useEffect(() => {
         AOS.init();
+        
     }, [])
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm({
+        criteriaMode: "all",
+        mode: "onChange"
+    })
+
+    const onSubmit = (data) => {
+        console.log(data)
+        // const email = data.email;
+        // const password = data.password;
+
+
+
+    }
+
     return (
         <div className="container mx-auto mt-36 mb-20">
-             <Helmet>
+            <Helmet>
                 <title>User Feedbacks</title>
             </Helmet>
             <div>
                 <h1 className="text-4xl text-center mb-16" data-aos="zoom-out" data-aos-duration='1000'>Clients Testimonials</h1>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="zoom-in-left"
-                    data-aos-duration='1000'
+                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="fade-up"
+                        data-aos-duration='1000'
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine" data-aos-delay='1000'>
                         <div className="flex gap-8 items-center">
@@ -44,13 +68,11 @@ const FeedBack = () => {
 
                     </div>
 
-                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="zoom-in"
-                    data-aos-duration='1000'
+                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="fade-down"
+                        data-aos-duration='1000'
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine" data-aos-delay='1000'>
-                        <div className="flex gap-8 items-center" data-aos="zoom-in-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" data-aos-delay='1000'>
+                        <div className="flex gap-8 items-center">
                             <div className="w-[90px] h-[90px] ">
                                 <img className="w-full h-full rounded-full" src={'https://i.ibb.co/jb2FTg1/headshot-portrait.jpg'} alt="" />
                             </div>
@@ -74,8 +96,8 @@ const FeedBack = () => {
                     </div>
 
 
-                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="zoom-in-down"
-                    data-aos-duration='1000'
+                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="fade-up"
+                        data-aos-duration='1000'
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine" data-aos-delay='1000'>
                         <div className="flex gap-8 items-center">
@@ -102,8 +124,8 @@ const FeedBack = () => {
                     </div>
 
 
-                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="zoom-in-down"
-                    data-aos-duration='1000'
+                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="fade-down"
+                        data-aos-duration='1000'
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine" >
                         <div className="flex gap-8 items-center">
@@ -129,7 +151,7 @@ const FeedBack = () => {
 
                     </div>
 
-                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="zoom-in-up"
+                    <div className="space-y-5 shadow-lg px-10 py-8" data-aos="fade-up"
                         data-aos-offset="300"
                         data-aos-duration='1000'
                         data-aos-easing="ease-in-sine" >
@@ -161,6 +183,21 @@ const FeedBack = () => {
 
 
                 </div>
+            </div>
+            <div className='mt-10 space-y-3'>
+                {/* give your feedback */}
+                <h3 className='font-medium text-lg' data-aos='fade-right' data-aos-duration='1000'>Leave a Reply</h3>
+                <form className="space-y-6"  onSubmit={handleSubmit(onSubmit)}>
+                    {/* <div className="space-y-1 text-sm">
+                        <label htmlFor="email" className="block text-gray-700">Your Email</label>
+                        <input type="email" {...register("email")} placeholder="Email" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
+                    </div> */}
+                    
+                    <div data-aos='fade-left' data-aos-duration='1000'>
+                        <textarea {...register('comment')} className='border border-primary-color rounded-lg w-full p-2' placeholder='Your feedback..' id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button data-aos='fade-right' data-aos-duration='1000' className="block p-3  text-center rounded-sm  bg-primary-color text-gray-100 hover:bg-secondary-color">Post Comment</button>
+                </form>
             </div>
         </div>
     );

@@ -42,14 +42,15 @@ const NavBar = () => {
                 <NavLink className={({ isActive }) =>
                     isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
                 } to='/updateProfile'>Update Profile</NavLink>
-                <NavLink className={({ isActive }) =>
-                    isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
-                } to={`/blogs/${1}`}>Blogs</NavLink>
-                <NavLink className={({ isActive }) =>
-                    isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
-                } to='/feedbacks'>Feedbacks</NavLink>
+
             </>
         }
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to={`/blogs/${1}`}>Blogs</NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
+        } to='/feedbacks'>Feedbacks</NavLink>
         <NavLink className={({ isActive }) =>
             isActive ? "  font-medium border-b-2 border-primary-color text-primary-color p-2" : "font-medium  p-2 rounded-lg hover:text-primary-color"
         } to='/about'>About Us</NavLink>
@@ -85,7 +86,7 @@ const NavBar = () => {
                     {
                         user ?
                             <>
-                                <div className="dropdown dropdown-end">
+                                <div className="dropdown dropdown-end tooltip tooltip-bottom tooltip-success tooltip-" data-tip={user?.displayName}>
                                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                                         <div className="w-12 rounded-full">
                                             <img alt="Not found" src={user.photoURL} />
@@ -95,22 +96,22 @@ const NavBar = () => {
                                         <li>
                                             <Link to='/userProfile' className="justify-between">
                                                 Profile
-                                                <span className="badge">New</span>
+                                                
                                             </Link>
                                         </li>
                                         <li><Link>{user?.displayName}</Link></li>
-                                        <li><Link>Logout</Link></li>
+
                                     </ul>
                                 </div>
 
                                 <div onClick={scrollToTop} className='border  rounded-lg hover:border-primary-color'>
-                                    <button onClick={handleLogout} className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogOut</button>
+                                    <button onClick={handleLogout} className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-medium  border-none px-5">LogOut</button>
                                 </div>
                             </>
                             :
                             <>
                                 <div onClick={scrollToTop} className='border  rounded-lg hover:border-primary-color'>
-                                    <Link to='/login' className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-bold text-lg border-none px-5">LogIn</Link>
+                                    <Link to='/login' className="btn hover:text-primary-color hover:bg-white hover:border-primary-color bg-primary-color text-white font-medium  border-none px-5">LogIn</Link>
                                 </div>
                             </>
                     }

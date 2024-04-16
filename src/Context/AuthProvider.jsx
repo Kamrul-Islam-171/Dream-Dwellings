@@ -7,6 +7,8 @@ import { GithubAuthProvider } from "firebase/auth";
 export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
+import PropTypes from 'prop-types'; // ES6
+
 
 const AuthProvider = ({ children }) => {
 
@@ -48,6 +50,7 @@ const AuthProvider = ({ children }) => {
 
 
     const userLogOut = () => {
+        setLoading(true);
         return signOut(auth);
     }
 
@@ -68,5 +71,9 @@ const AuthProvider = ({ children }) => {
         </div>
     );
 };
+
+AuthProvider.propTypes = {
+    children:PropTypes.node
+}
 
 export default AuthProvider;

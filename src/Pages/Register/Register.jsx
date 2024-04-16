@@ -1,15 +1,17 @@
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 import { FaEyeSlash } from "react-icons/fa";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import toast from "react-hot-toast";
 
 const Register = () => {
+    const navigate = useNavigate();
     useEffect(() => {
         AOS.init();
     }, [])
@@ -52,17 +54,23 @@ const Register = () => {
 
                         //logout
                         userLogOut()
-                            .then(() => console.log('logout'))
+                            .then(() => {
+                                console.log('logout')
+                            })
                             .catch(error => console.log(error))
+                            toast.success('User Registration successful')
+                            navigate('/login')
 
                     })
                     .catch(error => {
                         console.log(error)
+                        toast.error('Somethig went wrong. Please try again')
                     })
 
             })
             .catch(error => {
                 console.log(error)
+                toast.error('Somethig went wrong. Please try again')
             })
     }
     return (
