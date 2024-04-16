@@ -10,13 +10,15 @@ const PrivateRoute = ({children}) => {
     const location = useLocation();
 
 
+    console.log(user)
+    if(user) return children;
+
     if(loading) {
         return <div className="flex justify-center items-center h-screen"><SyncLoader color="#36d7b7" /></div>
     }
 
 
 
-    if(user) return children;
     return (
         <Navigate to={'/login'} state={location.pathname}></Navigate>
     );

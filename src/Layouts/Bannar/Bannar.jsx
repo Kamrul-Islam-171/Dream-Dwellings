@@ -59,7 +59,7 @@ const Bannar = () => {
                     <div className="bg-gradient-to-tr from-[#000000CC] to-[#00000059] h-[calc(100vh-200px)]">
 
                         <div className='space-y-4 absolute top-1/3 md:left-1/4 lg:left-1/4 left-10'>
-                            <h1 className='text-5xl font-bold  text-white'>Rent The Right Vacation Home</h1>
+                            <h1 className='text-5xl font-bold  text-white'>Rent SeaSide Vacation Home</h1>
                             <p className='text-white w-[90%] md:w-4/5 lg:w-3/4'>Unwind in your dream getaway. Our Vacation Homes beckon with comfort and charm, offering the perfect backdrop for unforgettable moments. Experience relaxation redefined as you indulge in the ultimate escape.</p>
                         </div>
                         <img src={'https://i.ibb.co/0FqdW1T/vacation-rental-websites-1550853606.jpg'} className=' h-full w-full object-cover mix-blend-overlay' alt="" />

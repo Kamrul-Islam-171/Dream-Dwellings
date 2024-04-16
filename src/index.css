@@ -11,9 +11,17 @@
     --secondary-color: #C7C8CC;
     --third-color: #E3E1D9; */
 
-    --primary-color: #e9a081;
+    /* --primary-color: #e9a081;
     --secondary-color: #e9a08166;
-    --third-color: #e9a08133;
+    --third-color: #e9a08133; */
+
+    --primary-color: #1fd655;
+    --secondary-color: #1fd65566;
+    --third-color: #1fd65533;
+
+    /* --primary-color: #234DD4;
+    --secondary-color: #234DD466;
+    --third-color: #234DD433; */
 
 }
 

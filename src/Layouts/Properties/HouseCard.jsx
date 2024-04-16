@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import  './card.css';
 
 const HouseCard = ({ houseInfo }) => {
     const scrollToTop = () => {
@@ -14,9 +15,9 @@ const HouseCard = ({ houseInfo }) => {
     const { image, estate_title, description, segment_name, price, status, area, location, facilities, id } = houseInfo;
     // console.log(houseInfo)
     return (
-        <div>
+        <div className="card-img-zoom1 overflow-hidden">
             <div data-aos={id % 2 ? 'zoom-in' : 'zoom-out'} data-aos-delay={id <=3 ? '500' : '100'} data-aos-duration='1000' className="card  bg-base-100 shadow-xl relative">
-                <figure className="p-2"><img className="rounded-lg h-[300px]" src={image} alt="not found" /></figure>
+                <figure className="p-2"><img className=" card-img1 rounded-lg h-[300px]" src={image} alt="not found" /></figure>
                 <div className="card-body h-[250px] flex flex-col relative">
                     <h2 className="card-title text-primary-color">{estate_title}</h2>
                     <div className="flex gap-2">

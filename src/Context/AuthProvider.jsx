@@ -62,7 +62,7 @@ const AuthProvider = ({ children }) => {
         })
     }
 
-    const data = { CreateUser, GoogleLogin,GithubLogin, loading, user, userLogOut, udpateUserProfile, SignInUser }
+    const data = { CreateUser, GoogleLogin,GithubLogin, loading, user, setUser,userLogOut, udpateUserProfile, SignInUser }
     return (
         <div>
             <AuthContext.Provider value={data}>

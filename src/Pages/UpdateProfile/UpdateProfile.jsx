@@ -13,7 +13,7 @@ import toast from "react-hot-toast";
 
 const UpdateProfile = () => {
     const navigate = useNavigate();
-    const { udpateUserProfile } = useContext(AuthContext);
+    const { udpateUserProfile, setUser } = useContext(AuthContext);
     const scrollToTop = () => {
         window.scrollTo(0, 0)
     }
@@ -37,6 +37,8 @@ const UpdateProfile = () => {
             .then(() => {
                 console.log('profile updated')
                 toast.success('Profile Updated Successfully');
+                // setUser()
+                
                 navigate('/userProfile')
                 location.reload();
             })

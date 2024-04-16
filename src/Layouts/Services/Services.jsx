@@ -15,7 +15,7 @@ const Services = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
             <div className="bg-white p-8  space-y-4 rounded-md" data-aos='fade-up' data-aos-duration='1000'>
                 <span className="text-5xl text-primary-color"><IoHomeOutline /></span>
-                <h3 className="text-lg font-medium">Buy your home</h3>
+                <h3 className="text-lg font-medium ">Buy your home</h3>
                 <p>Unlock the door to your dream home with just a click! Browse and buy your ideal property directly from our website today.</p>
             </div>
             <div data-aos='fade-down' data-aos-duration='1000' className="bg-white p-8 space-y-4 rounded-md">

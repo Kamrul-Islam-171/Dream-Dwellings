@@ -3,6 +3,9 @@ import { format } from "date-fns";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import '../Properties/card.css';
+import PropTypes from 'prop-types'; // ES6
+
 
 const BlogCard = ({ blog }) => {
     useEffect(() => {
@@ -10,11 +13,11 @@ const BlogCard = ({ blog }) => {
     }, [])
     const { id, title, postedDate, description, images } = blog;
     return (
-        <div>
+        <div className="card-img-zoom1">
             <div data-aos={id%2 ? 'fade-down':'fade-up'} data-aos-duration='1000' data-aos-delay='300' className="card card-compact  bg-base-100 shadow-xl h-[500px]">
-                <figure className="h-[300px]"><img className="h-full object-cover" src={images[0]} alt="Shoes" /></figure>
+                <figure className="h-[300px]"><img className="card-img1 h-full object-cover" src={images[0]} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{title}</h2>
+                    <h2 className="card-title text-primary-color">{title}</h2>
                     <p className="text-gray-500">{format(postedDate, 'MMMM do, yyyy')}</p>
                     <p className="text-gray-500 text-justify">{description.slice(0, 150)}</p>
                     <div className="card-actions">
@@ -28,5 +31,8 @@ const BlogCard = ({ blog }) => {
         </div>
     );
 };
+BlogCard.propTypes = {
+    blog : PropTypes.object
+}
 
 export default BlogCard;

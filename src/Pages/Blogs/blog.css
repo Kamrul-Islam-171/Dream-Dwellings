@@ -1,0 +1,9 @@
+
+.card-img-zoom :hover  {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
+.card-img-zoom img {
+    transition: transform .4s;
+}
