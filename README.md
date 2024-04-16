@@ -11,22 +11,23 @@ Live link :
 - **About Us Page.** (The About Us section provides detailed information about the company, its mission, vision,  and any other relevant details. This helps build trust and credibility among users.)
 - **Responsive Design.** (The website is designed to be responsive across various devices and screen sizes, ensuring a seamless browsing experience for users whether they access the site from a desktop, tablet, or smartphone.)
 - **Secure and Privacy-focused.** (Dream Dwellings prioritizes the security and privacy of its users' data. Robust security measures are in place to protect sensitive information, and user data is handled in accordance with privacy regulations.)
+- **User Login.** (A User can login by email and password, google or github.)
 
 
-### Packages Used:
+### Npm Packages Used:
 - [React Router](https://reactrouter.com/en/main)
-- react-helmet-async
-- swiper.js
-- react-icons
-- Aos
-- date-fns
-- animate.css
-- react-spinners
-- react-hot-toast
-- props-types
-- react-hook-form
+- [react-helmet-async](https://www.npmjs.com/package/react-helmet-async)
+- [swiper.js](https://swiperjs.com/get-started)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [Aos](https://www.npmjs.com/package/aos)
+- [date-fns](https://www.npmjs.com/package/date-fns)
+- [animate.css](https://animate.style/)
+- [react-spinners](https://www.npmjs.com/package/react-spinners)
+- [react-hot-toast](https://www.npmjs.com/package/react-hot-toast)
+- [props-types](https://www.npmjs.com/package/prop-types)
+- [react-hook-form](https://react-hook-form.com/get-started)
 
 
 ### Frameworks Used : 
-- Tailwind CSS
-- Daisy UI
+- [Tailwind CSS](https://tailwindcss.com/docs/installation)
+- [Daisy UI](https://daisyui.com/)
