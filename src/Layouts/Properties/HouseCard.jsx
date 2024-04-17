@@ -18,7 +18,7 @@ const HouseCard = ({ houseInfo }) => {
     return (
         <div className="card-img-zoom1 overflow-hidden rounded-2xl">
             <div data-aos={id % 2 ? 'zoom-in' : 'zoom-out'} data-aos-delay={id <=3 ? '500' : '100'} data-aos-duration='1000' className="card  bg-base-100 shadow-xl relative">
-                <figure className="p-2"><img className=" card-img1 rounded-lg h-[300px]" src={image} alt="not found" /></figure>
+                <figure className="h-[300px]"><img className="h-full w-full card-img1 rounded-lg " src={image} alt="not found" /></figure>
                 <div className="card-body h-[250px] flex flex-col relative">
                     <h2 className="card-title text-primary-color">{estate_title}</h2>
                     <div className="flex gap-2">
