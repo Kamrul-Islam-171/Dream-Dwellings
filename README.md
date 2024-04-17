@@ -1,6 +1,6 @@
 # Dream Dwellings
 
-Live link : (https://assignment-nine-9fb41.web.app) 
+Live link : https://assignment-nine-9fb41.web.app
 
 
 ### Features and Characteristics : 
