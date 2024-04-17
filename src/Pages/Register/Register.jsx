@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import toast from "react-hot-toast";
 
 const Register = () => {
+    const [showPass, setShowPass] = useState(false);
     const navigate = useNavigate();
     useEffect(() => {
         AOS.init();
@@ -19,7 +20,6 @@ const Register = () => {
     const { CreateUser, udpateUserProfile, userLogOut } = useContext(AuthContext);
     // console.log(CreateUser)
 
-    const [showPass, setShowPass] = useState(false);
 
 
     // src = https://i.ibb.co/n0w6p8r/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg
@@ -58,8 +58,8 @@ const Register = () => {
                                 console.log('logout')
                             })
                             .catch(error => console.log(error))
-                            toast.success('User Registration successful')
-                            navigate('/login')
+                        toast.success('User Registration successful')
+                        navigate('/login')
 
                     })
                     .catch(error => {
@@ -81,7 +81,7 @@ const Register = () => {
 
 
             <div className="flex justify-center items-center mt-32 mb-24">
-                <div data-aos='fade-right' data-aos-duration = '1000' className="w-full max-w-md p-8 space-y-3 rounded-xl border-primary-color border text-gray-700">
+                <div data-aos='fade-right' data-aos-duration='1000' className="w-full max-w-md p-8 space-y-3 rounded-xl border-primary-color border text-gray-700">
                     <h1 className="text-2xl font-bold text-center text-primary-color">Register Now</h1>
                     <form noValidate="" className="space-y-6 " onSubmit={handleSubmit(onSubmit)}>
                         <div className="space-y-1 text-sm">
@@ -101,17 +101,18 @@ const Register = () => {
                             {errors?.photoUrl?.types?.required && <p className="text-red-500">This field is required</p>}
 
                         </div>
-                        <div className="relative">
+                        <div className="relative ">
                             <div className="space-y-1 text-sm " >
                                 <label htmlFor="password" className="block text-gray-700">Password</label>
-                                <input type={showPass ? 'text' : 'password'} {...register("password", { required: { value: true, message: "This field is required" }, pattern: { value: /^(?=.*[A-Z])(?=.*[a-z])/, message: "At least one Uppercase and lowercase" }, minLength: { value: 6, message: "At least 6 character" } })} placeholder="Password" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
-                                <div className="absolute right-4 bottom-8">
-                                    <button onClick={() => setShowPass(!showPass)}><span className="text-gray-600 text-xl"><FaEyeSlash /></span></button>
+                                <div className="">
+                                    <input type={showPass ? 'text' : 'password'} {...register("password", { required: { value: true, message: "This field is required" }, pattern: { value: /^(?=.*[A-Z])(?=.*[a-z])/, message: "At least one Uppercase and lowercase" }, minLength: { value: 6, message: "At least 6 character" } })} placeholder="Password" className="border border-primary-color w-full px-4 py-3 rounded-md border-gray-700  focus:border-violet-400" />
+                                    <p className=" cursor-pointer absolute right-3 top-10 text-lg" onClick={() => setShowPass(!showPass)}><FaEyeSlash /></p>
                                 </div>
                                 {/* {errors?.password?.types?.required && <p className="text-red-500">This field is required</p>} */}
                                 {/* {errors?.password?.types?.pattern && <p className="text-red-500">Must have at least one Uppercase</p>} */}
                                 {errors?.password && <p className="text-red-500">{errors.password.message}</p>}
                             </div>
+                            {/* <p className=" cursor-pointer absolute right-2 bottom-10" onClick={() => setShowPass(!showPass)}><FaEyeSlash /></p> */}
                         </div>
                         <button className="block w-full p-3 text-center rounded-sm  bg-primary-color text-gray-100 hover:bg-secondary-color">Register</button>
                     </form>
