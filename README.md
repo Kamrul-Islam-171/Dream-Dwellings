@@ -31,3 +31,8 @@ Live link :
 ### Frameworks Used : 
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
 - [Daisy UI](https://daisyui.com/)
+
+
+### Authentication : 
+- [Firebase](https://firebase.google.com/)
+  
