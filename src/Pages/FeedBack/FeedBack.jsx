@@ -38,7 +38,7 @@ const FeedBack = () => {
                 <title>User Feedbacks</title>
             </Helmet>
             <div>
-                <h1 className="text-4xl text-center mb-16" data-aos="zoom-out" data-aos-duration='1000'>Clients Testimonials</h1>
+                <h1 className="text-4xl font-medium text-center mb-16" data-aos="zoom-out" data-aos-duration='1000'>Clients Testimonials</h1>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
                     <div className="space-y-5 shadow-lg px-10 py-8" data-aos="fade-up"

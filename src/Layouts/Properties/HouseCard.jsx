@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import  './card.css';
+import PropTypes from 'prop-types';
 
 const HouseCard = ({ houseInfo }) => {
     const scrollToTop = () => {
@@ -12,10 +13,10 @@ const HouseCard = ({ houseInfo }) => {
     useEffect(() => {
         AOS.init();
     }, [])
-    const { image, estate_title, description, segment_name, price, status, area, location, facilities, id } = houseInfo;
+    const { image, estate_title, price, status, area, location, facilities, id } = houseInfo;
     // console.log(houseInfo)
     return (
-        <div className="card-img-zoom1 overflow-hidden">
+        <div className="card-img-zoom1 overflow-hidden rounded-2xl">
             <div data-aos={id % 2 ? 'zoom-in' : 'zoom-out'} data-aos-delay={id <=3 ? '500' : '100'} data-aos-duration='1000' className="card  bg-base-100 shadow-xl relative">
                 <figure className="p-2"><img className=" card-img1 rounded-lg h-[300px]" src={image} alt="not found" /></figure>
                 <div className="card-body h-[250px] flex flex-col relative">
@@ -48,5 +49,9 @@ const HouseCard = ({ houseInfo }) => {
         </div>
     );
 };
+
+HouseCard.propTypes = {
+    houseInfo: PropTypes.object
+}
 
 export default HouseCard;

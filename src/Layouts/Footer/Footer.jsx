@@ -18,7 +18,7 @@ const Footer = () => {
             <div className='text-white pt-20 text-center lg:text-start  grid gap-5 lg:grid-cols-4 md:grid-cols-2 '>
                 <div className="">
                     {/* <img src={home} className='mx-auto  w-[70px] h-[70px] bg-white rounded-full' alt="" /> */}
-                    <h1 className='text-gray-100 text-2xl font-bold'>Dream Dwelling</h1>
+                    <h1 className='text-gray-100 text-2xl font-bold'>Dream Dwellings</h1>
                     <p className='text-gray-400'>Discover your perfect sanctuary with Dream Dwelling, where every home embodies the essence of your dreams. Let us guide you to the doorstep of your ideal living space.</p>
                 </div>
                 <div className="lg:ml-10">

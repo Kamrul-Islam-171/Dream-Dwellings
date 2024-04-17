@@ -1,8 +1,9 @@
-import { useLoaderData } from "react-router-dom";
+
 import HouseCard from "./HouseCard";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import PropTypes from 'prop-types';
 
 const Properties = ({ data }) => {
     // const data = useLoaderData();
@@ -14,7 +15,7 @@ const Properties = ({ data }) => {
         <div>
             <div className="flex flex-col justify-center items-center space-y-3">
                 <h1 data-aos='fade-right' data-aos-duration='1000' className="text-center text-3xl font-bold">Latest Properties</h1>
-                <p data-aos='fade-left' data-aos-duration='1000' className="text-center w-1/2">Discover your dream home with the latest listings showcasing a variety of styles, locations, and price ranges, tailored to fit your unique preferences and needs.</p>
+                <p data-aos='fade-left' data-aos-duration='1000' className="text-center w-1/2 text-gray-500">Discover your dream home with the latest listings showcasing a variety of styles, locations, and price ranges, tailored to fit your unique preferences and needs.</p>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10 ">
                 {
@@ -24,5 +25,9 @@ const Properties = ({ data }) => {
         </div>
     );
 };
+
+Properties.propTypes = {
+    data:PropTypes.array
+}
 
 export default Properties;

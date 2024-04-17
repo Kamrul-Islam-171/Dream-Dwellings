@@ -67,7 +67,7 @@ const Blogs = () => {
             </div>
             <div className="container mx-auto mt-10 space-y-5 bg-white p-10">
                 <h1 data-aos='fade-left' data-aos-duration='1000' className="text-5xl text-primary-color">{blogDetails[0]?.title}</h1>
-                <div className=" flex gap-20 text-gray-500">
+                <div className=" flex gap-20 text-gray-600">
                     <div data-aos='fade-right' data-aos-duration='1000' className="flex gap-2 flex-col lg:flex-row md:flex-row items-center">
                         <span><FaRegCalendarAlt /></span>
                         <p>Posted by ,</p>
@@ -75,12 +75,12 @@ const Blogs = () => {
                         <p>{blogDetails[0]?.postedDate}</p>
                         {/* <p>{format(blogDetails[0]?.postedDate, 'MMMM do, yyyy')}</p> */}
                     </div>
-                    <div data-aos='fade-left' data-aos-duration='1000' className="flex gap-2 items-center">
+                    <div data-aos='fade-left' data-aos-duration='1000' className="flex gap-2 items-center text-gray-600">
                         <span><FaRegComment /></span>
                         <p>{blogDetails[0]?.commentsCount}</p>
                     </div>
                 </div>
-                <div className="text-gray-500">
+                <div className="text-gray-600">
                     <p data-aos='fade-left' data-aos-duration='1000' className="text-justify">
                         {blogDetails[0]?.description}
                     </p>
